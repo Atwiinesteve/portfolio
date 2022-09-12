@@ -219,6 +219,7 @@ body section#hero--area .profile--area .card--image .occupation p span.js-yellow
 html section#hero--area .profile--area .card--image .occupation p span.js-yellow {
   background-color: yellow;
   padding: 1rem 0 0 1rem;
+  font-weight: bolder;
 }
 body section#hero--area .profile--area .card--image .card--footer,
 html section#hero--area .profile--area .card--image .card--footer {
