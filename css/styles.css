@@ -13,11 +13,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(250, 217, 179);
+  background: #ffb5a7;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(248, 156, 51);
+  background: #ff866e;
   border-radius: 50px;
 }
 
@@ -43,7 +43,7 @@ html header.header--area {
   width: 100%;
   height: 12vh;
   padding: 1rem;
-  background: #fafafa;
+  background: #f8edeb;
   position: fixed;
   top: 0;
   left: 0;
@@ -90,7 +90,7 @@ html header.header--area .logo--area .logo--darker .name p {
 body header.header--area .logo--area .logo--lighter .occupation p,
 html header.header--area .logo--area .logo--lighter .occupation p {
   font-size: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Quicksand", sans-serif;
   font-weight: 100;
 }
@@ -125,7 +125,7 @@ html header.header--area nav.navbar .nav--list ul li {
 }
 body header.header--area nav.navbar .nav--list ul li a,
 html header.header--area nav.navbar .nav--list ul li a {
-  color: gray !important;
+  color: rgb(0, 0, 0) !important;
   text-transform: uppercase;
   font-size: 1rem;
   text-decoration: none;
@@ -167,7 +167,7 @@ html section#hero--area .about--area {
 }
 body section#hero--area .profile--area,
 html section#hero--area .profile--area {
-  background-color: rgb(250, 217, 179);
+  background-color: #f9dcc4;
   text-align: center;
 }
 body section#hero--area .profile--area .card--image,
@@ -177,7 +177,7 @@ html section#hero--area .profile--area .card--image {
   position: absolute;
   top: 8rem;
   left: 32rem;
-  background-color: rgb(252, 237, 220);
+  background-color: #fec89a;
   text-align: center;
   position: relative;
   -webkit-box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
@@ -211,14 +211,19 @@ html section#hero--area .profile--area .card--image .breaker {
 }
 body section#hero--area .profile--area .card--image .occupation p,
 html section#hero--area .profile--area .card--image .occupation p {
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   margin-top: 3rem;
   font-size: 1.1rem;
+}
+body section#hero--area .profile--area .card--image .occupation p span.js-yellow,
+html section#hero--area .profile--area .card--image .occupation p span.js-yellow {
+  background-color: yellow;
+  padding: 1rem 0 0 1rem;
 }
 body section#hero--area .profile--area .card--image .card--footer,
 html section#hero--area .profile--area .card--image .card--footer {
   margin-top: 4rem;
-  background: #fafafa;
+  background: #ffffff;
   width: 100%;
   height: 60px;
 }
@@ -236,15 +241,16 @@ html section#hero--area .profile--area .card--image .card--footer ul.icons {
       justify-content: space-around;
   list-style: none;
 }
-body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-facebook-f,
+body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-github,
 body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
 body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
 body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram,
-html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-facebook-f,
+html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-github,
 html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
 html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
 html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram {
-  color: black;
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
 }
 body section#hero--area .about--area,
 html section#hero--area .about--area {
@@ -276,10 +282,10 @@ html section#hero--area .about--area .buttons--cta button.resume {
   padding: 0.8rem 1rem;
   width: 20%;
   color: white;
-  background-color: blue;
+  background-color: #ffb5a7;
   border-radius: 5px;
   text-transform: uppercase;
-  border: 2px solid blue;
+  border: 2px solid #ffb5a7;
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
   font-weight: bolder;
@@ -291,19 +297,19 @@ html section#hero--area .about--area .buttons--cta button.resume {
 body section#hero--area .about--area .buttons--cta button.resume:hover,
 html section#hero--area .about--area .buttons--cta button.resume:hover {
   background-color: transparent;
-  color: blue;
-  border: 2px solid blue;
+  color: #ffb5a7;
+  border: 2px solid #ffb5a7;
   cursor: pointer;
 }
 body section#hero--area .about--area .buttons--cta button.projects,
 html section#hero--area .about--area .buttons--cta button.projects {
   padding: 0.8rem 1rem;
   width: 20%;
-  color: blue;
+  color: #ffa694;
   background-color: transparent;
   border-radius: 5px;
   text-transform: uppercase;
-  border: 2px solid blue;
+  border: 2px solid #fca290;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-family: "Quicksand", sans-serif;
@@ -315,9 +321,9 @@ html section#hero--area .about--area .buttons--cta button.projects {
 }
 body section#hero--area .about--area .buttons--cta button.projects:hover,
 html section#hero--area .about--area .buttons--cta button.projects:hover {
-  background-color: blue;
+  background-color: #ffb5a7;
   color: rgb(255, 255, 255);
-  border: 2px solid blue;
+  border: 2px solid #ffa391;
   cursor: pointer;
 }
 body section#hero--area .about--area .intro-description p,

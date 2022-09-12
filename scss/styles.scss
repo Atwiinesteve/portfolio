@@ -13,11 +13,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(250, 217, 179);
+    background: #ffb5a7;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(248, 156, 51);
+    background: #ff866e;
     border-radius: 50px;
 }
 
@@ -36,7 +36,7 @@ html {
         width: 100%;
         height: 12vh;
         padding: 1rem;
-        background: #fafafa;
+        background: #f8edeb;
         position: fixed;
         top: 0;
         left: 0;
@@ -69,7 +69,7 @@ html {
             .logo--lighter {
                 .occupation p {
                     font-size: 1rem;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 100;
                 }
@@ -94,7 +94,7 @@ html {
                         margin-right: 0.8rem;
 
                         a {
-                            color: gray!important;
+                            color: rgb(0, 0, 0)!important;
                             text-transform: uppercase;
                             font-size: 1rem;
                             text-decoration: none;
@@ -136,7 +136,7 @@ html {
         }
 
         .profile--area {
-            background-color: rgb(250, 217, 179);
+            background-color: #f9dcc4;
             text-align: center;
             
             .card--image {
@@ -145,7 +145,7 @@ html {
                 position: absolute;
                 top: 8rem;
                 left: 32rem;
-                background-color: rgb(252, 237, 220);
+                background-color: #fec89a;
                 text-align: center;
                 position: relative;
                 box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
@@ -174,17 +174,23 @@ html {
                     transform: translate(450%, 100%);
                     width: 10%;
                     margin: 2rem 0 2rem 0;
+
                 }
 
                 .occupation p {
-                    letter-spacing: 10px;
+                    letter-spacing: 5px;
                     margin-top: 3rem;
                     font-size: 1.1rem;
+                    
+                    span.js-yellow {
+                        background-color: yellow;
+                        padding: 1rem 0 0 1rem;
+                    }
                 }
 
                 .card--footer {
                     margin-top: 4rem;
-                    background: #fafafa;
+                    background: #ffffff;
                     width: 100%;
                     height: 60px;
                     
@@ -198,11 +204,12 @@ html {
 
                         li {
                             a {
-                                .fa-facebook-f,
+                                .fa-github,
                                 .fa-twitter,
                                 .fa-linkedin-in,
                                 .fa-instagram {
-                                    color: black;
+                                    color: rgb(0, 0, 0);
+                                    font-size: 1.4rem;
                                 }
                             }
                         }
@@ -240,10 +247,10 @@ html {
                     padding: 0.8rem 1rem;
                     width: 20%;
                     color: white;
-                    background-color: blue;
+                    background-color: #ffb5a7;
                     border-radius: 5px;
                     text-transform: uppercase;
-                    border: 2px solid blue;
+                    border: 2px solid #ffb5a7;
                     font-family: 'Quicksand', sans-serif;
                     font-size: 1.2rem;
                     font-weight: bolder;
@@ -253,8 +260,8 @@ html {
 
                     &:hover {
                         background-color: transparent;
-                        color: blue;
-                        border: 2px solid blue;
+                        color: #ffb5a7;
+                        border: 2px solid #ffb5a7;
                         cursor: pointer;
                     }
                 }
@@ -262,11 +269,11 @@ html {
                 button.projects {
                     padding: 0.8rem 1rem;
                     width: 20%;
-                    color: blue;
+                    color: #ffa694;
                     background-color: transparent;
                     border-radius: 5px;
                     text-transform: uppercase;
-                    border: 2px solid blue;
+                    border: 2px solid #fca290;
                     font-family: 'Roboto', sans-serif;
                     font-weight: bolder;
                     font-family: 'Quicksand', sans-serif;
@@ -276,9 +283,9 @@ html {
                     transition: all 0.5s ease;
 
                     &:hover {
-                        background-color: blue;
+                        background-color: #ffb5a7;
                         color: rgb(255, 255, 255);
-                        border: 2px solid blue;
+                        border: 2px solid #ffa391;
                         cursor: pointer;
                     }
                 }
