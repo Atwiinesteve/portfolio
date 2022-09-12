@@ -336,3 +336,77 @@ html section#hero--area .about--area .intro-description p {
   width: 50%;
   line-height: 1.5;
 }
+body footer#footer--area,
+html footer#footer--area {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5rem;
+}
+body footer#footer--area .contacts,
+html footer#footer--area .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body footer#footer--area .contacts .write--message,
+html footer#footer--area .contacts .write--message {
+  margin-right: 4rem;
+  text-align: center;
+  line-height: 1.8;
+}
+body footer#footer--area .contacts .write--message p,
+html footer#footer--area .contacts .write--message p {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+body footer#footer--area .contacts .write--message a,
+html footer#footer--area .contacts .write--message a {
+  color: gray;
+}
+body footer#footer--area .contacts .follow--me,
+html footer#footer--area .contacts .follow--me {
+  line-height: 1.8;
+  text-align: center;
+}
+body footer#footer--area .contacts .follow--me p,
+html footer#footer--area .contacts .follow--me p {
+  text-transform: capitalize;
+}
+body footer#footer--area .contacts .follow--me .icons a,
+html footer#footer--area .contacts .follow--me .icons a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+body footer#footer--area .contacts .follow--me .icons a:link,
+html footer#footer--area .contacts .follow--me .icons a:link {
+  color: rgb(0, 0, 0) !important;
+}
+body footer#footer--area .contacts .follow--me .icons a:visited,
+html footer#footer--area .contacts .follow--me .icons a:visited {
+  color: rgb(0, 0, 0) !important;
+}
+body footer#footer--area .contacts .follow--me .icons a:focus,
+html footer#footer--area .contacts .follow--me .icons a:focus {
+  color: rgb(0, 0, 0) !important;
+}
+body footer#footer--area .contacts .follow--me .icons a:nth-child(1),
+html footer#footer--area .contacts .follow--me .icons a:nth-child(1) {
+  margin-right: 1rem;
+}
