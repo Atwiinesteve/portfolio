@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(250, 217, 179);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(248, 156, 51);
+    border-radius: 50px;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+
+    header.header--area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 12vh;
+        padding: 1rem;
+        background: #fafafa;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        
+        .logo--area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo--darker {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .box .fa-square{
+                    margin-right: 0.5rem;
+                    color: blue;
+                }
+                .name p {
+                    font-size: 1.1rem;
+                    color: #000;
+                    text-transform: uppercase;
+                    font-weight: bolder;
+                    margin-right: 2rem;
+                    font-family: 'Quicksand', sans-serif;
+                }
+            }
+
+            .logo--lighter {
+                .occupation p {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 100;
+                }
+            }
+
+
+        }
+
+        nav.navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav--list {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
+
+                    li {
+                        margin-right: 0.8rem;
+
+                        a {
+                            color: gray!important;
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                            text-decoration: none;
+                            font-family: 'Quicksand', sans-serif;
+                            font-weight: 600;
+
+                            &:visited {
+                                color: purple;
+                            }
+
+                            &:active {
+                                color: gray;
+                            }
+
+                            &:link {
+                                color: gray;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+    section#hero--area {
+        width: 100%;
+        height: 100vh;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+
+        .profile--area,
+        .about--area {
+            flex: 45%;
+        }
+
+        .profile--area {
+            background-color: rgb(250, 217, 179);
+            text-align: center;
+            
+            .card--image {
+                width: 450px;
+                height: 570px;
+                position: absolute;
+                top: 8rem;
+                left: 32rem;
+                background-color: rgb(252, 237, 220);
+                text-align: center;
+                position: relative;
+                box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
+            
+                .image {
+                    img {
+                        margin-top: 1rem;
+                        width: 250px;
+                        height: 250px;
+                        object-fit: contain;
+                        border-radius: 50%;
+                    }
+                }
+
+                .profile--name p {
+                    margin-top: 2rem;
+                    font-weight: bolder;
+                    color: black;
+                    font-size: 2.5rem;
+                }
+
+                .breaker {
+                    text-align: center;
+                    background-color: blue;
+                    height: 3px;
+                    transform: translate(450%, 100%);
+                    width: 10%;
+                    margin: 2rem 0 2rem 0;
+                }
+
+                .occupation p {
+                    letter-spacing: 10px;
+                    margin-top: 3rem;
+                    font-size: 1.1rem;
+                }
+
+                .card--footer {
+                    margin-top: 4rem;
+                    background: #fafafa;
+                    width: 100%;
+                    height: 60px;
+                    
+                    ul.icons {
+                        padding-top: 1rem;
+                        margin-top: 4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        list-style: none;
+
+                        li {
+                            a {
+                                .fa-facebook-f,
+                                .fa-twitter,
+                                .fa-linkedin-in,
+                                .fa-instagram {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .about--area {
+            margin-top: 12rem;
+            margin-left: 6rem;
+            
+            .main--header {
+                margin-bottom: 2rem;
+                
+                h1 {
+                    font-size: 9rem;
+                    text-transform: capitalize;
+                    letter-spacing: 3px;
+                }
+                
+            }
+            
+            .intro-section p {
+                margin-bottom: 2.2rem;
+                font-weight: bolder;
+                font-size: 2rem;
+            }
+
+            .buttons--cta {
+                margin-bottom: 2rem;
+
+                button.resume {
+                    padding: 0.8rem 1rem;
+                    width: 20%;
+                    color: white;
+                    background-color: blue;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    border: 2px solid blue;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    letter-spacing: 3px;
+                    margin-right: 1rem;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: blue;
+                        border: 2px solid blue;
+                        cursor: pointer;
+                    }
+                }
+
+                button.projects {
+                    padding: 0.8rem 1rem;
+                    width: 20%;
+                    color: blue;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    border: 2px solid blue;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bolder;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 1.2rem;
+                    letter-spacing: 3px;
+                    margin-right: 1rem;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        background-color: blue;
+                        color: rgb(255, 255, 255);
+                        border: 2px solid blue;
+                        cursor: pointer;
+                    }
+                }
+
+                
+            }
+
+            .intro-description p {
+                margin-top: 3rem;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 500;
+                font-size: 1.2rem;
+                width: 50%;
+                line-height: 1.5;
+            }
+
+        }
+
+    }
+
+}

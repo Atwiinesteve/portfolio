@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(250, 217, 179);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(248, 156, 51);
+  border-radius: 50px;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+body header.header--area,
+html header.header--area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 12vh;
+  padding: 1rem;
+  background: #fafafa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+body header.header--area .logo--area,
+html header.header--area .logo--area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header.header--area .logo--area .logo--darker,
+html header.header--area .logo--area .logo--darker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header.header--area .logo--area .logo--darker .box .fa-square,
+html header.header--area .logo--area .logo--darker .box .fa-square {
+  margin-right: 0.5rem;
+  color: blue;
+}
+body header.header--area .logo--area .logo--darker .name p,
+html header.header--area .logo--area .logo--darker .name p {
+  font-size: 1.1rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-right: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+body header.header--area .logo--area .logo--lighter .occupation p,
+html header.header--area .logo--area .logo--lighter .occupation p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+}
+body header.header--area nav.navbar,
+html header.header--area nav.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header.header--area nav.navbar .nav--list ul,
+html header.header--area nav.navbar .nav--list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+body header.header--area nav.navbar .nav--list ul li,
+html header.header--area nav.navbar .nav--list ul li {
+  margin-right: 0.8rem;
+}
+body header.header--area nav.navbar .nav--list ul li a,
+html header.header--area nav.navbar .nav--list ul li a {
+  color: gray !important;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+body header.header--area nav.navbar .nav--list ul li a:visited,
+html header.header--area nav.navbar .nav--list ul li a:visited {
+  color: purple;
+}
+body header.header--area nav.navbar .nav--list ul li a:active,
+html header.header--area nav.navbar .nav--list ul li a:active {
+  color: gray;
+}
+body header.header--area nav.navbar .nav--list ul li a:link,
+html header.header--area nav.navbar .nav--list ul li a:link {
+  color: gray;
+}
+body section#hero--area,
+html section#hero--area {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body section#hero--area .profile--area,
+body section#hero--area .about--area,
+html section#hero--area .profile--area,
+html section#hero--area .about--area {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+}
+body section#hero--area .profile--area,
+html section#hero--area .profile--area {
+  background-color: rgb(250, 217, 179);
+  text-align: center;
+}
+body section#hero--area .profile--area .card--image,
+html section#hero--area .profile--area .card--image {
+  width: 450px;
+  height: 570px;
+  position: absolute;
+  top: 8rem;
+  left: 32rem;
+  background-color: rgb(252, 237, 220);
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
+          box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
+}
+body section#hero--area .profile--area .card--image .image img,
+html section#hero--area .profile--area .card--image .image img {
+  margin-top: 1rem;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+body section#hero--area .profile--area .card--image .profile--name p,
+html section#hero--area .profile--area .card--image .profile--name p {
+  margin-top: 2rem;
+  font-weight: bolder;
+  color: black;
+  font-size: 2.5rem;
+}
+body section#hero--area .profile--area .card--image .breaker,
+html section#hero--area .profile--area .card--image .breaker {
+  text-align: center;
+  background-color: blue;
+  height: 3px;
+  -webkit-transform: translate(450%, 100%);
+          transform: translate(450%, 100%);
+  width: 10%;
+  margin: 2rem 0 2rem 0;
+}
+body section#hero--area .profile--area .card--image .occupation p,
+html section#hero--area .profile--area .card--image .occupation p {
+  letter-spacing: 10px;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+}
+body section#hero--area .profile--area .card--image .card--footer,
+html section#hero--area .profile--area .card--image .card--footer {
+  margin-top: 4rem;
+  background: #fafafa;
+  width: 100%;
+  height: 60px;
+}
+body section#hero--area .profile--area .card--image .card--footer ul.icons,
+html section#hero--area .profile--area .card--image .card--footer ul.icons {
+  padding-top: 1rem;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-facebook-f,
+body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
+body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
+body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram,
+html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-facebook-f,
+html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
+html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
+html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram {
+  color: black;
+}
+body section#hero--area .about--area,
+html section#hero--area .about--area {
+  margin-top: 12rem;
+  margin-left: 6rem;
+}
+body section#hero--area .about--area .main--header,
+html section#hero--area .about--area .main--header {
+  margin-bottom: 2rem;
+}
+body section#hero--area .about--area .main--header h1,
+html section#hero--area .about--area .main--header h1 {
+  font-size: 9rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+body section#hero--area .about--area .intro-section p,
+html section#hero--area .about--area .intro-section p {
+  margin-bottom: 2.2rem;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+body section#hero--area .about--area .buttons--cta,
+html section#hero--area .about--area .buttons--cta {
+  margin-bottom: 2rem;
+}
+body section#hero--area .about--area .buttons--cta button.resume,
+html section#hero--area .about--area .buttons--cta button.resume {
+  padding: 0.8rem 1rem;
+  width: 20%;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 2px solid blue;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin-right: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body section#hero--area .about--area .buttons--cta button.resume:hover,
+html section#hero--area .about--area .buttons--cta button.resume:hover {
+  background-color: transparent;
+  color: blue;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+body section#hero--area .about--area .buttons--cta button.projects,
+html section#hero--area .about--area .buttons--cta button.projects {
+  padding: 0.8rem 1rem;
+  width: 20%;
+  color: blue;
+  background-color: transparent;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 2px solid blue;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-right: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body section#hero--area .about--area .buttons--cta button.projects:hover,
+html section#hero--area .about--area .buttons--cta button.projects:hover {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  border: 2px solid blue;
+  cursor: pointer;
+}
+body section#hero--area .about--area .intro-description p,
+html section#hero--area .about--area .intro-description p {
+  margin-top: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 50%;
+  line-height: 1.5;
+}
