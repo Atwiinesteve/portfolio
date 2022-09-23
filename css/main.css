@@ -29,8 +29,8 @@ html {
   position: relative;
   overflow-x: hidden;
 }
-body header.header--area,
-html header.header--area {
+
+header.header--area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +41,7 @@ html header.header--area {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 12vh;
+  height: 7vh;
   padding: 1rem;
   background: #f8edeb;
   position: fixed;
@@ -49,8 +49,7 @@ html header.header--area {
   left: 0;
   z-index: 999;
 }
-body header.header--area .logo--area,
-html header.header--area .logo--area {
+header.header--area .logo--area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,8 +60,7 @@ html header.header--area .logo--area {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body header.header--area .logo--area .logo--darker,
-html header.header--area .logo--area .logo--darker {
+header.header--area .logo--area .logo--darker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,13 +71,11 @@ html header.header--area .logo--area .logo--darker {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body header.header--area .logo--area .logo--darker .box .fa-square,
-html header.header--area .logo--area .logo--darker .box .fa-square {
+header.header--area .logo--area .logo--darker .box .fa-square {
   margin-right: 0.5rem;
   color: blue;
 }
-body header.header--area .logo--area .logo--darker .name p,
-html header.header--area .logo--area .logo--darker .name p {
+header.header--area .logo--area .logo--darker .name p {
   font-size: 1.1rem;
   color: #000;
   text-transform: uppercase;
@@ -87,15 +83,13 @@ html header.header--area .logo--area .logo--darker .name p {
   margin-right: 2rem;
   font-family: "Quicksand", sans-serif;
 }
-body header.header--area .logo--area .logo--lighter .occupation p,
-html header.header--area .logo--area .logo--lighter .occupation p {
+header.header--area .logo--area .logo--lighter .occupation p {
   font-size: 1rem;
   text-transform: capitalize;
   font-family: "Quicksand", sans-serif;
   font-weight: 100;
 }
-body header.header--area nav.navbar,
-html header.header--area nav.navbar {
+header.header--area nav.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,8 +100,7 @@ html header.header--area nav.navbar {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body header.header--area nav.navbar .nav--list ul,
-html header.header--area nav.navbar .nav--list ul {
+header.header--area nav.navbar .nav--list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,36 +112,32 @@ html header.header--area nav.navbar .nav--list ul {
           justify-content: center;
   list-style: none;
 }
-body header.header--area nav.navbar .nav--list ul li,
-html header.header--area nav.navbar .nav--list ul li {
+header.header--area nav.navbar .nav--list ul li {
   margin-right: 0.8rem;
 }
-body header.header--area nav.navbar .nav--list ul li a,
-html header.header--area nav.navbar .nav--list ul li a {
-  color: rgb(0, 0, 0) !important;
+header.header--area nav.navbar .nav--list ul li a {
+  color: rgb(92, 92, 92) !important;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
-body header.header--area nav.navbar .nav--list ul li a:visited,
-html header.header--area nav.navbar .nav--list ul li a:visited {
+header.header--area nav.navbar .nav--list ul li a:visited {
   color: purple;
 }
-body header.header--area nav.navbar .nav--list ul li a:active,
-html header.header--area nav.navbar .nav--list ul li a:active {
+header.header--area nav.navbar .nav--list ul li a:active {
   color: gray;
 }
-body header.header--area nav.navbar .nav--list ul li a:link,
-html header.header--area nav.navbar .nav--list ul li a:link {
+header.header--area nav.navbar .nav--list ul li a:link {
   color: gray;
 }
-body section#hero--area,
-html section#hero--area {
+
+section#hero--area {
   width: 100%;
-  height: 100vh;
-  margin-top: 5rem;
+  height: 90vh;
+  padding-top: 3rem;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,21 +146,17 @@ html section#hero--area {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-body section#hero--area .profile--area,
-body section#hero--area .about--area,
-html section#hero--area .profile--area,
-html section#hero--area .about--area {
+section#hero--area .profile--area,
+section#hero--area .about--area {
   -webkit-box-flex: 45%;
       -ms-flex: 45%;
           flex: 45%;
 }
-body section#hero--area .profile--area,
-html section#hero--area .profile--area {
+section#hero--area .profile--area {
   background-color: #f9dcc4;
   text-align: center;
 }
-body section#hero--area .profile--area .card--image,
-html section#hero--area .profile--area .card--image {
+section#hero--area .profile--area .card--image {
   width: 450px;
   height: 570px;
   position: absolute;
@@ -183,8 +168,7 @@ html section#hero--area .profile--area .card--image {
   -webkit-box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
           box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
 }
-body section#hero--area .profile--area .card--image .image img,
-html section#hero--area .profile--area .card--image .image img {
+section#hero--area .profile--area .card--image .image img {
   margin-top: 1rem;
   width: 250px;
   height: 250px;
@@ -192,15 +176,13 @@ html section#hero--area .profile--area .card--image .image img {
      object-fit: contain;
   border-radius: 50%;
 }
-body section#hero--area .profile--area .card--image .profile--name p,
-html section#hero--area .profile--area .card--image .profile--name p {
+section#hero--area .profile--area .card--image .profile--name p {
   margin-top: 2rem;
   font-weight: bolder;
   color: black;
   font-size: 2.5rem;
 }
-body section#hero--area .profile--area .card--image .breaker,
-html section#hero--area .profile--area .card--image .breaker {
+section#hero--area .profile--area .card--image .breaker {
   text-align: center;
   background-color: blue;
   height: 3px;
@@ -209,27 +191,23 @@ html section#hero--area .profile--area .card--image .breaker {
   width: 10%;
   margin: 2rem 0 2rem 0;
 }
-body section#hero--area .profile--area .card--image .occupation p,
-html section#hero--area .profile--area .card--image .occupation p {
+section#hero--area .profile--area .card--image .occupation p {
   letter-spacing: 5px;
   margin-top: 3rem;
   font-size: 1.1rem;
 }
-body section#hero--area .profile--area .card--image .occupation p span.js-yellow,
-html section#hero--area .profile--area .card--image .occupation p span.js-yellow {
+section#hero--area .profile--area .card--image .occupation p span.js-yellow {
   background-color: yellow;
   padding: 1rem 0 0 1rem;
   font-weight: bolder;
 }
-body section#hero--area .profile--area .card--image .card--footer,
-html section#hero--area .profile--area .card--image .card--footer {
+section#hero--area .profile--area .card--image .card--footer {
   margin-top: 4rem;
   background: #ffffff;
   width: 100%;
   height: 60px;
 }
-body section#hero--area .profile--area .card--image .card--footer ul.icons,
-html section#hero--area .profile--area .card--image .card--footer ul.icons {
+section#hero--area .profile--area .card--image .card--footer ul.icons {
   padding-top: 1rem;
   margin-top: 4rem;
   display: -webkit-box;
@@ -242,44 +220,34 @@ html section#hero--area .profile--area .card--image .card--footer ul.icons {
       justify-content: space-around;
   list-style: none;
 }
-body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-github,
-body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
-body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
-body section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram,
-html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-github,
-html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
-html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
-html section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram {
+section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-github,
+section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
+section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
+section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram {
   color: rgb(0, 0, 0);
   font-size: 1.4rem;
 }
-body section#hero--area .about--area,
-html section#hero--area .about--area {
+section#hero--area .about--area {
   margin-top: 12rem;
   margin-left: 6rem;
 }
-body section#hero--area .about--area .main--header,
-html section#hero--area .about--area .main--header {
+section#hero--area .about--area .main--header {
   margin-bottom: 2rem;
 }
-body section#hero--area .about--area .main--header h1,
-html section#hero--area .about--area .main--header h1 {
+section#hero--area .about--area .main--header h1 {
   font-size: 9rem;
   text-transform: capitalize;
   letter-spacing: 3px;
 }
-body section#hero--area .about--area .intro-section p,
-html section#hero--area .about--area .intro-section p {
+section#hero--area .about--area .intro-section p {
   margin-bottom: 2.2rem;
   font-weight: bolder;
   font-size: 2rem;
 }
-body section#hero--area .about--area .buttons--cta,
-html section#hero--area .about--area .buttons--cta {
+section#hero--area .about--area .buttons--cta {
   margin-bottom: 2rem;
 }
-body section#hero--area .about--area .buttons--cta button.resume,
-html section#hero--area .about--area .buttons--cta button.resume {
+section#hero--area .about--area .buttons--cta button.resume {
   padding: 0.8rem 1rem;
   width: 20%;
   color: white;
@@ -295,15 +263,13 @@ html section#hero--area .about--area .buttons--cta button.resume {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-body section#hero--area .about--area .buttons--cta button.resume:hover,
-html section#hero--area .about--area .buttons--cta button.resume:hover {
+section#hero--area .about--area .buttons--cta button.resume:hover {
   background-color: transparent;
   color: #ffb5a7;
   border: 2px solid #ffb5a7;
   cursor: pointer;
 }
-body section#hero--area .about--area .buttons--cta button.projects,
-html section#hero--area .about--area .buttons--cta button.projects {
+section#hero--area .about--area .buttons--cta button.projects {
   padding: 0.8rem 1rem;
   width: 20%;
   color: #ffa694;
@@ -320,15 +286,13 @@ html section#hero--area .about--area .buttons--cta button.projects {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-body section#hero--area .about--area .buttons--cta button.projects:hover,
-html section#hero--area .about--area .buttons--cta button.projects:hover {
+section#hero--area .about--area .buttons--cta button.projects:hover {
   background-color: #ffb5a7;
   color: rgb(255, 255, 255);
   border: 2px solid #ffa391;
   cursor: pointer;
 }
-body section#hero--area .about--area .intro-description p,
-html section#hero--area .about--area .intro-description p {
+section#hero--area .about--area .intro-description p {
   margin-top: 3rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -336,10 +300,10 @@ html section#hero--area .about--area .intro-description p {
   width: 50%;
   line-height: 1.5;
 }
-body footer#footer--area,
-html footer#footer--area {
+
+footer#footer--area {
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,10 +313,10 @@ html footer#footer--area {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 5rem;
+  padding: 3rem 5rem;
+  background-color: rgb(255, 248, 239);
 }
-body footer#footer--area .contacts,
-html footer#footer--area .contacts {
+footer#footer--area .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,50 +327,40 @@ html footer#footer--area .contacts {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body footer#footer--area .contacts .write--message,
-html footer#footer--area .contacts .write--message {
+footer#footer--area .contacts .write--message {
   margin-right: 4rem;
   text-align: center;
   line-height: 1.8;
 }
-body footer#footer--area .contacts .write--message p,
-html footer#footer--area .contacts .write--message p {
+footer#footer--area .contacts .write--message p {
   color: black;
   text-transform: capitalize;
   font-weight: bolder;
 }
-body footer#footer--area .contacts .write--message a,
-html footer#footer--area .contacts .write--message a {
+footer#footer--area .contacts .write--message a {
   color: gray;
 }
-body footer#footer--area .contacts .follow--me,
-html footer#footer--area .contacts .follow--me {
+footer#footer--area .contacts .follow--me {
   line-height: 1.8;
   text-align: center;
 }
-body footer#footer--area .contacts .follow--me p,
-html footer#footer--area .contacts .follow--me p {
+footer#footer--area .contacts .follow--me p {
   text-transform: capitalize;
 }
-body footer#footer--area .contacts .follow--me .icons a,
-html footer#footer--area .contacts .follow--me .icons a {
+footer#footer--area .contacts .follow--me .icons a {
   color: black;
   text-decoration: none;
   font-size: 1.3rem;
 }
-body footer#footer--area .contacts .follow--me .icons a:link,
-html footer#footer--area .contacts .follow--me .icons a:link {
+footer#footer--area .contacts .follow--me .icons a:link {
   color: rgb(0, 0, 0) !important;
 }
-body footer#footer--area .contacts .follow--me .icons a:visited,
-html footer#footer--area .contacts .follow--me .icons a:visited {
+footer#footer--area .contacts .follow--me .icons a:visited {
   color: rgb(0, 0, 0) !important;
 }
-body footer#footer--area .contacts .follow--me .icons a:focus,
-html footer#footer--area .contacts .follow--me .icons a:focus {
+footer#footer--area .contacts .follow--me .icons a:focus {
   color: rgb(0, 0, 0) !important;
 }
-body footer#footer--area .contacts .follow--me .icons a:nth-child(1),
-html footer#footer--area .contacts .follow--me .icons a:nth-child(1) {
+footer#footer--area .contacts .follow--me .icons a:nth-child(1) {
   margin-right: 1rem;
 }
