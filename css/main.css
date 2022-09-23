@@ -355,7 +355,7 @@ section#projects--area p.coming--soon {
   font-size: 3rem;
 }
 
-section#acontacts--area {
+section#contacts--area {
   width: 100vw;
   height: 90vh;
   display: -webkit-box;
@@ -368,7 +368,7 @@ section#acontacts--area {
       -ms-flex-pack: center;
           justify-content: center;
 }
-section#acontacts--area p.coming--soon {
+section#contacts--area p.coming--soon {
   text-transform: uppercase;
   font-size: 3rem;
 }
