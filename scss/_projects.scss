@@ -1,13 +1,59 @@
 section#projects--area {
  width: 100vw;
  height: 90vh;
+ margin-top: 6rem;
  display: flex;
  align-items: center;
- justify-content: center;
+ flex-direction: column;
 
- p.coming--soon {
-  text-transform: uppercase;
-  font-size: 3rem;
+ .projects--header {
+  h1 {
+   font-size: 3rem;
+   font-weight: bolder;
+   color: #000;
+  }
+ }
+
+ .projects--sub--header {
+  line-height: 2;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: #000;
+ }
+
+ .projects--container {
+  padding: 2rem;
+  
+  .project {
+   display: flex;
+   margin-bottom: 1.4rem;
+
+   .project--image {
+    flex: 100%;
+    img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+    }
+   }
+
+   .project--description {
+    flex: 50%;
+    .description--header h3 {
+     font-size: 2.5rem;
+     text-align: center;
+     margin-bottom: 1rem;
+    }
+    .description--content {
+     p {
+      line-height: 1.5;
+      font-size: 1.4rem;
+     }
+    }
+   }
+
+  }
+
  }
 
 }

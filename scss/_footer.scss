@@ -6,6 +6,9 @@ footer#footer--area {
  justify-content: space-between;
  padding: 3rem 5rem;
  background-color: rgb(255, 248, 239);
+ position: fixed;
+ bottom: 0;
+ right: 0;
 
  .contacts {
      display: flex;

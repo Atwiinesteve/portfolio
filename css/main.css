@@ -340,19 +340,62 @@ section#resume--area p.coming--soon {
 section#projects--area {
   width: 100vw;
   height: 90vh;
+  margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-section#projects--area p.coming--soon {
-  text-transform: uppercase;
+section#projects--area .projects--header h1 {
   font-size: 3rem;
+  font-weight: bolder;
+  color: #000;
+}
+section#projects--area .projects--sub--header {
+  line-height: 2;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: #000;
+}
+section#projects--area .projects--container {
+  padding: 2rem;
+}
+section#projects--area .projects--container .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.4rem;
+}
+section#projects--area .projects--container .project .project--image {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+section#projects--area .projects--container .project .project--image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#projects--area .projects--container .project .project--description {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+section#projects--area .projects--container .project .project--description .description--header h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section#projects--area .projects--container .project .project--description .description--content p {
+  line-height: 1.5;
+  font-size: 1.4rem;
 }
 
 section#contacts--area {
@@ -387,6 +430,9 @@ footer#footer--area {
           justify-content: space-between;
   padding: 3rem 5rem;
   background-color: rgb(255, 248, 239);
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 footer#footer--area .contacts {
   display: -webkit-box;
