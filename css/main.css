@@ -9,11 +9,11 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffb5a7;
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -28,9 +28,12 @@ html {
   font-family: "Quicksand", sans-serif;
   position: relative;
   overflow-x: hidden;
+  background-color: rgb(240, 240, 240);
 }
 
-header.header--area {
+header {
+  width: 100vw;
+  height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,67 +43,13 @@ header.header--area {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  height: 7vh;
   padding: 1rem;
-  background: #f8edeb;
-  position: fixed;
+  background-color: white;
+  position: sticky;
   top: 0;
   left: 0;
-  z-index: 999;
 }
-header.header--area .logo--area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header.header--area .logo--area .logo--darker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header.header--area .logo--area .logo--darker .box .fa-square {
-  margin-right: 0.5rem;
-  color: blue;
-}
-header.header--area .logo--area .logo--darker .name p {
-  font-size: 1.1rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bolder;
-  margin-right: 2rem;
-  font-family: "Quicksand", sans-serif;
-}
-header.header--area .logo--area .logo--lighter .occupation p {
-  font-size: 1rem;
-  text-transform: capitalize;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 100;
-}
-header.header--area nav.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header.header--area nav.navbar .nav--list ul {
+header .logo--area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,200 +59,137 @@ header.header--area nav.navbar .nav--list ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style: none;
 }
-header.header--area nav.navbar .nav--list ul li {
-  margin-right: 0.8rem;
-}
-header.header--area nav.navbar .nav--list ul li a {
-  color: rgb(92, 92, 92) !important;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  text-decoration: none;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-}
-header.header--area nav.navbar .nav--list ul li a:visited {
-  color: purple;
-}
-header.header--area nav.navbar .nav--list ul li a:active {
-  color: gray;
-}
-header.header--area nav.navbar .nav--list ul li a:link {
-  color: gray;
-}
-
-section#hero--area {
-  width: 100%;
-  height: 90vh;
-  padding-top: 3rem;
-  margin-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-section#hero--area .profile--area,
-section#hero--area .about--area {
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-}
-section#hero--area .profile--area {
-  background-color: #f9dcc4;
-  text-align: center;
-}
-section#hero--area .profile--area .card--image {
-  width: 450px;
-  height: 570px;
-  position: absolute;
-  top: 8rem;
-  left: 32rem;
-  background-color: #fec89a;
-  text-align: center;
-  position: relative;
-  -webkit-box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
-          box-shadow: -4px 11px 10px 1px rgb(161, 161, 161);
-}
-section#hero--area .profile--area .card--image .image img {
-  margin-top: 1rem;
-  width: 250px;
-  height: 250px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 50%;
-}
-section#hero--area .profile--area .card--image .profile--name p {
-  margin-top: 2rem;
-  font-weight: bolder;
-  color: black;
-  font-size: 2.5rem;
-}
-section#hero--area .profile--area .card--image .breaker {
-  text-align: center;
-  background-color: blue;
-  height: 3px;
-  -webkit-transform: translate(450%, 100%);
-          transform: translate(450%, 100%);
-  width: 10%;
-  margin: 2rem 0 2rem 0;
-}
-section#hero--area .profile--area .card--image .occupation p {
-  letter-spacing: 5px;
-  margin-top: 3rem;
-  font-size: 1.1rem;
-}
-section#hero--area .profile--area .card--image .occupation p span.js-yellow {
-  background-color: yellow;
-  padding: 1rem 0 0 1rem;
-  font-weight: bolder;
-}
-section#hero--area .profile--area .card--image .card--footer {
-  margin-top: 4rem;
-  background: #ffffff;
-  width: 100%;
-  height: 60px;
-}
-section#hero--area .profile--area .card--image .card--footer ul.icons {
-  padding-top: 1rem;
-  margin-top: 4rem;
+header .logo--area .logo--darker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-github,
-section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-twitter,
-section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-linkedin-in,
-section#hero--area .profile--area .card--image .card--footer ul.icons li a .fa-instagram {
+header .logo--area .logo--darker .box {
+  margin-right: 0.5rem;
+}
+header .logo--area .logo--darker .box .fa-square {
+  -webkit-animation: twinkle 0.5s alternate infinite;
+          animation: twinkle 0.5s alternate infinite;
+}
+header .logo--area .logo--lighter {
+  margin-left: 0.5rem;
+}
+header nav .nav--list .nav--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .nav--list .nav--items .nav--item {
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0 0.3rem;
+}
+header nav .nav--list .nav--items .nav--item a {
+  text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 1.4rem;
-}
-section#hero--area .about--area {
-  margin-top: 12rem;
-  margin-left: 6rem;
-}
-section#hero--area .about--area .main--header {
-  margin-bottom: 2rem;
-}
-section#hero--area .about--area .main--header h1 {
-  font-size: 9rem;
-  text-transform: capitalize;
-  letter-spacing: 3px;
-}
-section#hero--area .about--area .intro-section p {
-  margin-bottom: 2.2rem;
   font-weight: bolder;
+  font-size: 0.9rem;
+}
+header nav .nav--list .nav--items .nav--item a:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes twinkle {
+  0% {
+    color: red;
+  }
+  20% {
+    color: rgb(0, 102, 255);
+  }
+  40% {
+    color: rgb(234, 0, 255);
+  }
+  60% {
+    color: rgb(238, 255, 0);
+  }
+  80% {
+    color: rgb(0, 255, 21);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    color: red;
+  }
+  20% {
+    color: rgb(0, 102, 255);
+  }
+  40% {
+    color: rgb(234, 0, 255);
+  }
+  60% {
+    color: rgb(238, 255, 0);
+  }
+  80% {
+    color: rgb(0, 255, 21);
+  }
+}
+#hero--section {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+#hero--section .social--links {
+  position: fixed;
+  top: 200px;
+  left: 0px;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#hero--section .social--links span.gmail {
+  padding: 1rem;
+  background: rgb(245, 17, 47);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#hero--section .social--links span.gmail .fa-google {
+  color: white;
   font-size: 2rem;
 }
-section#hero--area .about--area .buttons--cta {
-  margin-bottom: 2rem;
-}
-section#hero--area .about--area .buttons--cta button.resume {
-  padding: 0.8rem 1rem;
-  width: 20%;
-  color: white;
-  background-color: #ffb5a7;
-  border-radius: 5px;
-  text-transform: uppercase;
-  border: 2px solid #ffb5a7;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  letter-spacing: 3px;
-  margin-right: 1rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-section#hero--area .about--area .buttons--cta button.resume:hover {
-  background-color: transparent;
-  color: #ffb5a7;
-  border: 2px solid #ffb5a7;
-  cursor: pointer;
-}
-section#hero--area .about--area .buttons--cta button.projects {
-  padding: 0.8rem 1rem;
-  width: 20%;
-  color: #ffa694;
-  background-color: transparent;
-  border-radius: 5px;
-  text-transform: uppercase;
-  border: 2px solid #fca290;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 3px;
-  margin-right: 1rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-section#hero--area .about--area .buttons--cta button.projects:hover {
-  background-color: #ffb5a7;
-  color: rgb(255, 255, 255);
-  border: 2px solid #ffa391;
-  cursor: pointer;
-}
-section#hero--area .about--area .intro-description p {
-  margin-top: 3rem;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  width: 50%;
-  line-height: 1.5;
-}
-
-section#about--area {
-  width: 100vw;
-  height: 90vh;
+#hero--section .social--links span.linkedin {
+  padding: 1rem;
+  background: rgb(6, 91, 161);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,9 +200,91 @@ section#about--area {
       -ms-flex-pack: center;
           justify-content: center;
 }
-section#about--area p.coming--soon {
+#hero--section .social--links span.linkedin .fa-linkedin-in {
+  color: white;
+  font-size: 2.3rem;
+}
+#hero--section .social--links span.github {
+  padding: 1rem;
+  background: rgb(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#hero--section .social--links span.github .fa-github {
+  color: white;
+  font-size: 2rem;
+}
+#hero--section .social--links span.twitter {
+  padding: 1rem;
+  background: rgb(7, 138, 245);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#hero--section .social--links span.twitter .fa-twitter {
+  color: white;
+  font-size: 2rem;
+}
+#hero--section .text--area {
+  margin-right: 20px;
+}
+#hero--section .text--area p.greeting--text {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: gray;
   text-transform: uppercase;
-  font-size: 3rem;
+}
+#hero--section .text--area p.name {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 600px;
+  margin-bottom: 5px;
+}
+#hero--section .text--area p.short--description {
+  width: 500px;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  color: gray;
+  font-size: 1.2rem;
+}
+#hero--section .text--area .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero--section .text--area .buttons a {
+  padding: 1rem 2rem;
+  background: rgb(21, 21, 250);
+  margin: 1rem 1rem 0 0;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+#hero--section .image--area {
+  margin-left: 20px;
+}
+#hero--section .image--area img.profile--picture {
+  width: 500px;
+  height: 500px;
 }
 
 section#resume--area {
@@ -335,150 +303,4 @@ section#resume--area {
 section#resume--area p.coming--soon {
   text-transform: uppercase;
   font-size: 3rem;
-}
-
-section#projects--area {
-  width: 100vw;
-  height: 90vh;
-  margin-top: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-section#projects--area .projects--header h1 {
-  font-size: 3rem;
-  font-weight: bolder;
-  color: #000;
-}
-section#projects--area .projects--sub--header {
-  line-height: 2;
-  font-size: 1.4rem;
-  font-weight: bolder;
-  color: #000;
-}
-section#projects--area .projects--container {
-  padding: 2rem;
-}
-section#projects--area .projects--container .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 1.4rem;
-}
-section#projects--area .projects--container .project .project--image {
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
-}
-section#projects--area .projects--container .project .project--image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-section#projects--area .projects--container .project .project--description {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-}
-section#projects--area .projects--container .project .project--description .description--header h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-section#projects--area .projects--container .project .project--description .description--content p {
-  line-height: 1.5;
-  font-size: 1.4rem;
-}
-
-section#contacts--area {
-  width: 100vw;
-  height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-section#contacts--area p.coming--soon {
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
-footer#footer--area {
-  width: 100%;
-  height: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 3rem 5rem;
-  background-color: rgb(255, 248, 239);
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-footer#footer--area .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer#footer--area .contacts .write--message {
-  margin-right: 4rem;
-  text-align: center;
-  line-height: 1.8;
-}
-footer#footer--area .contacts .write--message p {
-  color: black;
-  text-transform: capitalize;
-  font-weight: bolder;
-}
-footer#footer--area .contacts .write--message a {
-  color: gray;
-}
-footer#footer--area .contacts .follow--me {
-  line-height: 1.8;
-  text-align: center;
-}
-footer#footer--area .contacts .follow--me p {
-  text-transform: capitalize;
-}
-footer#footer--area .contacts .follow--me .icons a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-footer#footer--area .contacts .follow--me .icons a:link {
-  color: rgb(0, 0, 0) !important;
-}
-footer#footer--area .contacts .follow--me .icons a:visited {
-  color: rgb(0, 0, 0) !important;
-}
-footer#footer--area .contacts .follow--me .icons a:focus {
-  color: rgb(0, 0, 0) !important;
-}
-footer#footer--area .contacts .follow--me .icons a:nth-child(1) {
-  margin-right: 1rem;
 }

@@ -1,0 +1,86 @@
+header {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .logo--area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo--darker {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .box {
+        margin-right: 0.5rem;
+        .fa-square {
+          animation: twinkle 0.5s alternate infinite;
+        }
+      }
+
+    }
+
+    .logo--lighter {
+      margin-left: 0.5rem;
+    }
+
+  }
+
+  nav {
+
+    .nav--list {
+      .nav--items {
+        display: flex;
+        align-items: center;
+        
+        .nav--item {
+          text-transform: uppercase;
+          list-style-type: none;
+          margin: 0 0.3rem;
+
+          a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            font-size: 0.9rem;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+}
+
+// ANIMATONS
+@keyframes twinkle {
+  0% {
+    color: red;
+  }
+  20% {
+    color: rgb(0, 102, 255);
+  }
+  40% {
+    color: rgb(234, 0, 255);
+  }
+  60% {
+    color: rgb(238, 255, 0);
+  }
+  80% {
+    color: rgb(0, 255, 21);
+  }
+}

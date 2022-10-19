@@ -9,11 +9,11 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #ffb5a7;
+    background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,5 +27,6 @@ html {
     height: 100vh;
     font-family: 'Quicksand', sans-serif;
     position: relative;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    background-color: rgb(240, 240, 240);
 }
