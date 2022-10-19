@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -17,7 +18,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff866e;
+  background: blue;
   border-radius: 50px;
 }
 
@@ -43,7 +44,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 5rem;
   background-color: white;
   position: sticky;
   top: 0;
@@ -59,6 +60,7 @@ header .logo--area {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bolder;
 }
 header .logo--area .logo--darker {
   display: -webkit-box;
@@ -99,6 +101,7 @@ header nav .nav--list .nav--items .nav--item a {
   color: rgb(0, 0, 0);
   font-weight: bolder;
   font-size: 0.9rem;
+  font-family: "Quicksand", sans-serif;
 }
 header nav .nav--list .nav--items .nav--item a:hover {
   cursor: pointer;
@@ -242,10 +245,10 @@ header nav .nav--list .nav--items .nav--item a:hover {
   margin-right: 20px;
 }
 #hero--section .text--area p.greeting--text {
-  margin-bottom: 5px;
   font-size: 1.5rem;
-  color: gray;
+  color: rgb(139, 139, 139);
   text-transform: uppercase;
+  font-weight: bolder;
 }
 #hero--section .text--area p.name {
   font-size: 5rem;
@@ -259,8 +262,9 @@ header nav .nav--list .nav--items .nav--item a:hover {
   word-wrap: break-word;
   margin-bottom: 5px;
   line-height: 1.5;
-  color: gray;
+  color: rgb(80, 80, 80);
   font-size: 1.2rem;
+  font-weight: 500;
 }
 #hero--section .text--area .buttons {
   display: -webkit-box;
@@ -278,15 +282,60 @@ header nav .nav--list .nav--items .nav--item a:hover {
   color: white;
   text-transform: uppercase;
   font-size: 1.3rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border: 3px solid rgb(21, 21, 250);
+}
+#hero--section .text--area .buttons a:focus, #hero--section .text--area .buttons a:active {
+  outline: none;
+}
+#hero--section .text--area .buttons a:nth-child(1) {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#hero--section .text--area .buttons a:nth-child(1):hover {
+  letter-spacing: 5px;
+  background: transparent;
+  color: blue;
+}
+#hero--section .text--area .buttons a:nth-child(2) {
+  background-color: transparent;
+  color: blue;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#hero--section .text--area .buttons a:nth-child(2):hover {
+  background-color: blue;
+  color: white;
+  letter-spacing: 5px;
 }
 #hero--section .image--area {
   margin-left: 20px;
 }
 #hero--section .image--area img.profile--picture {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 8px 3px 20px 0px rgb(177, 177, 177);
+          box-shadow: 8px 3px 20px 0px rgb(177, 177, 177);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero--section .image--area img.profile--picture:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-clip-path: none;
+          clip-path: none;
 }
 
+@-webkit-keyframes rotateOriginal {}
+
+@keyframes rotateOriginal {}
 section#resume--area {
   width: 100vw;
   height: 90vh;
