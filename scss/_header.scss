@@ -1,19 +1,21 @@
-header {
+header#header {
   width: 100vw;
   height: 8vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 5rem;
   background-color: white;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: -100px;
   left: 0;
+  transition: top 0.3s ease;
 
   .logo--area {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bolder;
 
     .logo--darker {
       display: flex;
@@ -52,10 +54,12 @@ header {
             color: rgb(0, 0, 0);
             font-weight: bolder;
             font-size: 0.9rem;
+            font-family: 'Quicksand', sans-serif;
 
             &:hover {
               cursor: pointer;
             }
+
           }
 
         }
