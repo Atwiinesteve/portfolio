@@ -1,4 +1,4 @@
-header {
+header#header {
   width: 100vw;
   height: 8vh;
   display: flex;
@@ -6,9 +6,10 @@ header {
   justify-content: space-between;
   padding: 1rem 5rem;
   background-color: white;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: -100px;
   left: 0;
+  transition: top 0.3s ease;
 
   .logo--area {
     display: flex;

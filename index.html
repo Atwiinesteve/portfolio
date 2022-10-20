@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images//FACE PROFILE.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/boxicons.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -12,7 +13,7 @@
 <body>
 
     <!-- START HEADER -->
-    <header class="header--area">
+    <header class="header--area" id="header">
         <div class="logo--area">
             <div class="logo--darker">
                 <div class="box">
@@ -32,7 +33,7 @@
             <div class="nav--list">
                 <ul class="nav--items">
                     <li class="nav--item">
-                        <a href="./about.html" class="link">about me</a>
+                        <a href="#about" class="link">about me</a>
                     </li>
                     <li class="nav--item">
                         <a href="./resume.html" class="link">resume</a>
@@ -41,13 +42,26 @@
                         <a href="./projects.html" class="link">projects</a>
                     </li>
                     <li class="nav--item">
-                        <a href="./contacts.html" class="link">contact me</a>
+                        <a href="#contacts" class="link">contact me</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- END HEADER -->
+
+    <!-- START COVER -->
+    <div class="cover--section">
+       <h1 class="name--area">kiiza atwiine stephen</h1>
+       <hr class="divider">
+       <div class="role--short--desc">aspiring junior web developer</div>
+       <div class="cover--btns">
+        <a href="#" class="btn link--btn work">work</a>
+        <a href="#" class="btn link--btn about">about</a>
+        <a href="#" class="btn link--btn contact">contact</a>
+       </div>
+    </div>
+    <!-- END COVER -->
 
     <!-- START HERO AREA -->
     <div id="hero--section">
@@ -66,8 +80,7 @@
                 earum possimus suscipit minima ipsam.
             </p>
             <div class="buttons">
-                <a href="#" class="link link--projects">projects</a>
-                <a href="#" class="link link--projects">contact</a>
+                <a href="#" class="link link--projects">resume</a>
             </div>
         </div>
         <div class="image--area">
@@ -107,5 +120,6 @@
     
 
     <script src="./js/all.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

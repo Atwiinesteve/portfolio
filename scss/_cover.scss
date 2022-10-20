@@ -1,0 +1,75 @@
+.cover--section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('/images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 2;
+
+  h1.name--area {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 3px;
+  }
+
+  hr.divider {
+    width: 300px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 1rem;
+  }
+
+  .role--short--desc {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .cover--btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    a {
+      background-color: transparent;
+      padding: 0.4rem 1.3rem;
+      color: white;
+      font-size: 1.2rem;
+      font-family: 'Quicksand', sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid white;
+      margin: 1rem 1rem;
+      transition: all 0.3s ease;
+      // animation: twinkle all 0.4s ease;
+
+      &:nth-child(1):hover,
+      &:nth-child(2):hover,
+      &:nth-child(3):hover {
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.479);
+        color: white;
+        transform: scale(1);
+        border: 1px solid transparent;
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
+    }
+
+  }
+
+}
+

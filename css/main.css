@@ -32,7 +32,89 @@ html {
   background-color: rgb(240, 240, 240);
 }
 
-header {
+.cover--section {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 2;
+}
+.cover--section h1.name--area {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+.cover--section hr.divider {
+  width: 300px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.cover--section .role--short--desc {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.cover--section .cover--btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.cover--section .cover--btns a {
+  background-color: transparent;
+  padding: 0.4rem 1.3rem;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid white;
+  margin: 1rem 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cover--section .cover--btns a:nth-child(1):hover, .cover--section .cover--btns a:nth-child(2):hover, .cover--section .cover--btns a:nth-child(3):hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.479);
+  color: white;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: 1px solid transparent;
+}
+.cover--section .cover--btns a:active, .cover--section .cover--btns a:focus {
+  outline: none;
+}
+
+header#header {
   width: 100vw;
   height: 8vh;
   display: -webkit-box;
@@ -46,11 +128,13 @@ header {
           justify-content: space-between;
   padding: 1rem 5rem;
   background-color: white;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: -100px;
   left: 0;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
 }
-header .logo--area {
+header#header .logo--area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +146,7 @@ header .logo--area {
           justify-content: center;
   font-weight: bolder;
 }
-header .logo--area .logo--darker {
+header#header .logo--area .logo--darker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,17 +157,17 @@ header .logo--area .logo--darker {
       -ms-flex-pack: center;
           justify-content: center;
 }
-header .logo--area .logo--darker .box {
+header#header .logo--area .logo--darker .box {
   margin-right: 0.5rem;
 }
-header .logo--area .logo--darker .box .fa-square {
+header#header .logo--area .logo--darker .box .fa-square {
   -webkit-animation: twinkle 0.5s alternate infinite;
           animation: twinkle 0.5s alternate infinite;
 }
-header .logo--area .logo--lighter {
+header#header .logo--area .logo--lighter {
   margin-left: 0.5rem;
 }
-header nav .nav--list .nav--items {
+header#header nav .nav--list .nav--items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,19 +175,19 @@ header nav .nav--list .nav--items {
       -ms-flex-align: center;
           align-items: center;
 }
-header nav .nav--list .nav--items .nav--item {
+header#header nav .nav--list .nav--items .nav--item {
   text-transform: uppercase;
   list-style-type: none;
   margin: 0 0.3rem;
 }
-header nav .nav--list .nav--items .nav--item a {
+header#header nav .nav--list .nav--items .nav--item a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: bolder;
   font-size: 0.9rem;
   font-family: "Quicksand", sans-serif;
 }
-header nav .nav--list .nav--items .nav--item a:hover {
+header#header nav .nav--list .nav--items .nav--item a:hover {
   cursor: pointer;
 }
 
