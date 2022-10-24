@@ -1,0 +1,139 @@
+#projects--area {
+  margin-top: 3rem;
+  padding: 0 3rem;
+
+  .projects--header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects--container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .project--1,
+    .project--2,
+    .project--3,
+    .project--4,
+    .project--5 {
+      width: 100%;
+      align-self: center;
+      align-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .project--image {
+        img {
+          width: 500px;
+          height: 4
+          300px;
+          object-fit: cover;
+        }
+      }
+
+      .project--description {
+        width: 500px;
+        margin-left: 1rem;
+        
+        h3.project--name {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+          text-transform: uppercase;
+        }
+
+        p.description {
+          font-size: 1.3rem;
+        }
+
+        .tech--used {
+          h4 {
+            text-transform: capitalize;
+            margin: 0.8rem  0 0 0;
+            font-size: 1.3rem;
+          }
+          p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+          }
+        }
+
+        .project--btns {
+          margin-top: 0.9rem;
+          
+          button {
+            padding: 0.7rem 1rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            outline: none;
+            border: none;
+            color: white;
+            background-color: blue;
+            cursor: pointer;
+            
+            &:hover {
+              background-color: rgb(59, 59, 252);
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .project--2 {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .project--description {
+        text-align: right;
+        margin-right: 1rem;
+      }
+
+    }
+
+    .project--3 {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+
+      .project--description {
+        text-align: left;
+        margin-right: 1rem;
+      }
+
+    }
+
+    .project--4 {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .project--description {
+        text-align: right;
+        margin-right: 1rem;
+      }
+
+    }
+
+    .project--5 {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+
+      .project--description {
+        text-align: left;
+        margin-right: 1rem;
+      }
+
+    }
+
+  }
+
+}

@@ -328,6 +328,18 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 #hero--section .text--area {
   margin-right: 20px;
 }
+#hero--section .text--area p.greeting--text::before {
+  content: "@ ";
+  width: 90px;
+  height: 3px;
+  color: black;
+}
+#hero--section .text--area p.greeting--text::after {
+  content: " #";
+  width: 90px;
+  height: 3px;
+  color: black;
+}
 #hero--section .text--area p.greeting--text {
   font-size: 1.5rem;
   color: rgb(139, 139, 139);
@@ -436,4 +448,191 @@ section#resume--area {
 section#resume--area p.coming--soon {
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+#projects--area {
+  margin-top: 3rem;
+  padding: 0 3rem;
+}
+#projects--area .projects--header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+#projects--area .projects--container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#projects--area .projects--container .project--1,
+#projects--area .projects--container .project--2,
+#projects--area .projects--container .project--3,
+#projects--area .projects--container .project--4,
+#projects--area .projects--container .project--5 {
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#projects--area .projects--container .project--1 .project--image img,
+#projects--area .projects--container .project--2 .project--image img,
+#projects--area .projects--container .project--3 .project--image img,
+#projects--area .projects--container .project--4 .project--image img,
+#projects--area .projects--container .project--5 .project--image img {
+  width: 500px;
+  height: 4 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#projects--area .projects--container .project--1 .project--description,
+#projects--area .projects--container .project--2 .project--description,
+#projects--area .projects--container .project--3 .project--description,
+#projects--area .projects--container .project--4 .project--description,
+#projects--area .projects--container .project--5 .project--description {
+  width: 500px;
+  margin-left: 1rem;
+}
+#projects--area .projects--container .project--1 .project--description h3.project--name,
+#projects--area .projects--container .project--2 .project--description h3.project--name,
+#projects--area .projects--container .project--3 .project--description h3.project--name,
+#projects--area .projects--container .project--4 .project--description h3.project--name,
+#projects--area .projects--container .project--5 .project--description h3.project--name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+#projects--area .projects--container .project--1 .project--description p.description,
+#projects--area .projects--container .project--2 .project--description p.description,
+#projects--area .projects--container .project--3 .project--description p.description,
+#projects--area .projects--container .project--4 .project--description p.description,
+#projects--area .projects--container .project--5 .project--description p.description {
+  font-size: 1.3rem;
+}
+#projects--area .projects--container .project--1 .project--description .tech--used h4,
+#projects--area .projects--container .project--2 .project--description .tech--used h4,
+#projects--area .projects--container .project--3 .project--description .tech--used h4,
+#projects--area .projects--container .project--4 .project--description .tech--used h4,
+#projects--area .projects--container .project--5 .project--description .tech--used h4 {
+  text-transform: capitalize;
+  margin: 0.8rem 0 0 0;
+  font-size: 1.3rem;
+}
+#projects--area .projects--container .project--1 .project--description .tech--used p,
+#projects--area .projects--container .project--2 .project--description .tech--used p,
+#projects--area .projects--container .project--3 .project--description .tech--used p,
+#projects--area .projects--container .project--4 .project--description .tech--used p,
+#projects--area .projects--container .project--5 .project--description .tech--used p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+#projects--area .projects--container .project--1 .project--description .project--btns,
+#projects--area .projects--container .project--2 .project--description .project--btns,
+#projects--area .projects--container .project--3 .project--description .project--btns,
+#projects--area .projects--container .project--4 .project--description .project--btns,
+#projects--area .projects--container .project--5 .project--description .project--btns {
+  margin-top: 0.9rem;
+}
+#projects--area .projects--container .project--1 .project--description .project--btns button,
+#projects--area .projects--container .project--2 .project--description .project--btns button,
+#projects--area .projects--container .project--3 .project--description .project--btns button,
+#projects--area .projects--container .project--4 .project--description .project--btns button,
+#projects--area .projects--container .project--5 .project--description .project--btns button {
+  padding: 0.7rem 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+#projects--area .projects--container .project--1 .project--description .project--btns button:hover,
+#projects--area .projects--container .project--2 .project--description .project--btns button:hover,
+#projects--area .projects--container .project--3 .project--description .project--btns button:hover,
+#projects--area .projects--container .project--4 .project--description .project--btns button:hover,
+#projects--area .projects--container .project--5 .project--description .project--btns button:hover {
+  background-color: rgb(59, 59, 252);
+}
+#projects--area .projects--container .project--2 {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#projects--area .projects--container .project--2 .project--description {
+  text-align: right;
+  margin-right: 1rem;
+}
+#projects--area .projects--container .project--3 {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#projects--area .projects--container .project--3 .project--description {
+  text-align: left;
+  margin-right: 1rem;
+}
+#projects--area .projects--container .project--4 {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#projects--area .projects--container .project--4 .project--description {
+  text-align: right;
+  margin-right: 1rem;
+}
+#projects--area .projects--container .project--5 {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#projects--area .projects--container .project--5 .project--description {
+  text-align: left;
+  margin-right: 1rem;
+}
+
+#contacts--area {
+  width: 100%;
+  height: 100vh;
 }
