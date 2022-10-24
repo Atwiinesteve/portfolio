@@ -74,6 +74,21 @@
 
   .text--area {
     margin-right: 20px;
+
+    p.greeting--text::before {
+      content: '@ ';
+      width: 90px;
+      height: 3px;
+      color: black;
+    }
+
+    p.greeting--text::after {
+      content: ' #';
+      width: 90px;
+      height: 3px;
+      color: black;
+    }
+
     p.greeting--text {
       font-size: 1.5rem;
       color: rgb(139, 139, 139);
