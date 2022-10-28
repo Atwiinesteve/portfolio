@@ -341,6 +341,125 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
           justify-content: center;
   position: relative;
 }
+@media screen and (min-width: 300px) {
+  #hero--section {
+    margin-top: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0 10rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  #hero--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0 10rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  #hero--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0 10rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  #hero--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 700px) {
+  #hero--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 900px) {
+  #hero--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #hero--section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 #hero--section .social--links {
   position: fixed;
   top: 200px;
@@ -402,6 +521,24 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
             flex-direction: row;
   }
 }
+@media screen and (min-width: 730px) {
+  #hero--section .social--links {
+    top: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 770px) {
+  #hero--section .social--links {
+    top: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 #hero--section .social--links span.gmail {
   padding: 1rem;
   background: rgb(245, 17, 47);
@@ -432,6 +569,11 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 @media screen and (min-width: 450px) {
   #hero--section .social--links span.gmail .fa-google {
     font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 765px) {
+  #hero--section .social--links span.gmail .fa-google {
+    font-size: 1.4rem;
   }
 }
 #hero--section .social--links span.linkedin {
@@ -466,6 +608,11 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
     font-size: 1.1rem;
   }
 }
+@media screen and (min-width: 765px) {
+  #hero--section .social--links span.linkedin .fa-linkedin-in {
+    font-size: 1.4rem;
+  }
+}
 #hero--section .social--links span.github {
   padding: 1rem;
   background: rgb(0, 0, 0);
@@ -496,6 +643,11 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 @media screen and (min-width: 450px) {
   #hero--section .social--links span.github .fa-github {
     font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 765px) {
+  #hero--section .social--links span.github .fa-github {
+    font-size: 1.4rem;
   }
 }
 #hero--section .social--links span.twitter {
@@ -530,8 +682,41 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
     font-size: 1.1rem;
   }
 }
+@media screen and (min-width: 765px) {
+  #hero--section .social--links span.twitter .fa-twitter {
+    font-size: 1.4rem;
+  }
+}
 #hero--section .text--area {
   margin-right: 20px;
+}
+@media screen and (min-width: 300px) {
+  #hero--section .text--area {
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+@media screen and (min-width: 500px) {
+  #hero--section .text--area {
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+@media screen and (min-width: 700px) {
+  #hero--section .text--area {
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero--section .text--area {
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 #hero--section .text--area p.greeting--text::before {
   content: "@ ";
@@ -551,12 +736,70 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   text-transform: uppercase;
   font-weight: bolder;
 }
+@media screen and (min-width: 300px) {
+  #hero--section .text--area p.greeting--text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  #hero--section .text--area p.greeting--text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  #hero--section .text--area p.greeting--text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero--section .text--area p.greeting--text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #hero--section .text--area p.greeting--text {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+  }
+}
 #hero--section .text--area p.name {
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: bolder;
   width: 600px;
   margin-bottom: 5px;
+}
+@media screen and (min-width: 300px) {
+  #hero--section .text--area p.name {
+    font-size: 2rem;
+    margin: 1.5rem auto;
+  }
+}
+@media screen and (min-width: 500px) {
+  #hero--section .text--area p.name {
+    font-size: 2.5rem;
+    margin: 1.5rem auto;
+  }
+}
+@media screen and (min-width: 700px) {
+  #hero--section .text--area p.name {
+    font-size: 3rem;
+    margin: 1.5rem auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero--section .text--area p.name {
+    font-size: 3rem;
+    margin: 1.5rem auto;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #hero--section .text--area p.name {
+    font-size: 3rem;
+    margin: 1rem auto;
+  }
 }
 #hero--section .text--area p.short--description {
   width: 500px;
@@ -567,13 +810,75 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   font-size: 1.2rem;
   font-weight: 500;
 }
+@media screen and (min-width: 300px) {
+  #hero--section .text--area p.short--description {
+    width: 100%;
+    padding: 0rem 6.7rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) {
+  #hero--section .text--area p.short--description {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  #hero--section .text--area p.short--description {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero--section .text--area p.short--description {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #hero--section .text--area p.short--description {
+    width: 500px;
+    text-align: left;
+    padding: 0.1rem 1.5rem;
+  }
+}
 #hero--section .text--area .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media screen and (min-width: 300px) {
+  #hero--section .text--area .buttons {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 500px) {
+  #hero--section .text--area .buttons {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 700px) {
+  #hero--section .text--area .buttons {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero--section .text--area .buttons {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #hero--section .text--area .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 1.4rem;
+  }
 }
 #hero--section .text--area .buttons a {
   padding: 1rem 2rem;
@@ -586,6 +891,12 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   font-weight: bolder;
   letter-spacing: 1px;
   border: 3px solid rgb(21, 21, 250);
+}
+@media screen and (min-width: 300px) {
+  #hero--section .text--area .buttons a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 }
 #hero--section .text--area .buttons a:focus, #hero--section .text--area .buttons a:active {
   outline: none;
@@ -626,6 +937,36 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
           box-shadow: 8px 3px 20px 0px rgb(177, 177, 177);
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (min-width: 300px) {
+  #hero--section .image--area img.profile--picture {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 500px) {
+  #hero--section .image--area img.profile--picture {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #hero--section .image--area img.profile--picture {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #hero--section .image--area img.profile--picture {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #hero--section .image--area img.profile--picture {
+    width: 390px;
+    height: 390px;
+  }
 }
 #hero--section .image--area img.profile--picture:hover {
   -webkit-transform: rotate(0deg);
