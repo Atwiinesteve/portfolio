@@ -63,25 +63,39 @@ html {
   font-size: 5rem;
   letter-spacing: 3px;
 }
-@media only screen and (max-width: 320px) {
+@media screen and (min-width: 300px) {
   .cover--section h1.name--area {
     font-size: 1rem;
-    text-align: center;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 400px) {
   .cover--section h1.name--area {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 500px) {
   .cover--section h1.name--area {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
-@media only screen and (max-width: 770px) {
+@media screen and (min-width: 600px) {
+  .cover--section h1.name--area {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .cover--section h1.name--area {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (min-width: 740px) {
   .cover--section h1.name--area {
     font-size: 3rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .cover--section h1.name--area {
+    font-size: 3.5rem;
   }
 }
 .cover--section hr.divider {
@@ -90,22 +104,22 @@ html {
   background-color: white;
   margin-bottom: 1rem;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   .cover--section hr.divider {
     width: 100px;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   .cover--section hr.divider {
     width: 150px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   .cover--section hr.divider {
     width: 150px;
   }
 }
-@media only screen and (max-width: 770px) {
+@media screen and (min-width: 770px) {
   .cover--section hr.divider {
     width: 200px;
   }
@@ -116,22 +130,22 @@ html {
   text-transform: uppercase;
   font-size: 2rem;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   .cover--section .role--short--desc {
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   .cover--section .role--short--desc {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   .cover--section .role--short--desc {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 770px) {
+@media screen and (min-width: 770px) {
   .cover--section .role--short--desc {
     font-size: 1.5rem;
   }
@@ -164,25 +178,25 @@ html {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   .cover--section .cover--btns a {
     padding: 0.4rem 0.6rem;
     font-size: 0.8rem;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   .cover--section .cover--btns a {
     padding: 0.4rem 1rem;
     font-size: 0.8rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   .cover--section .cover--btns a {
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
 }
-@media only screen and (max-width: 770px) {
+@media screen and (min-width: 770px) {
   .cover--section .cover--btns a {
     padding: 0.4rem 1rem;
     font-size: 1rem;
@@ -343,7 +357,7 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   #hero--section .social--links {
     top: 0px;
     display: -webkit-box;
@@ -358,7 +372,7 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
             flex-direction: row;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   #hero--section .social--links {
     top: 0px;
     display: -webkit-box;
@@ -373,7 +387,7 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
             flex-direction: row;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   #hero--section .social--links {
     top: 0px;
     display: -webkit-box;
@@ -405,17 +419,17 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   color: white;
   font-size: 2rem;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   #hero--section .social--links span.gmail .fa-google {
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   #hero--section .social--links span.gmail .fa-google {
     font-size: 1.1rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   #hero--section .social--links span.gmail .fa-google {
     font-size: 1.1rem;
   }
@@ -437,17 +451,17 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   color: white;
   font-size: 2.3rem;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   #hero--section .social--links span.linkedin .fa-linkedin-in {
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   #hero--section .social--links span.linkedin .fa-linkedin-in {
     font-size: 1.1rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   #hero--section .social--links span.linkedin .fa-linkedin-in {
     font-size: 1.1rem;
   }
@@ -469,17 +483,17 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   color: white;
   font-size: 2rem;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   #hero--section .social--links span.github .fa-github {
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   #hero--section .social--links span.github .fa-github {
     font-size: 1.1rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   #hero--section .social--links span.github .fa-github {
     font-size: 1.1rem;
   }
@@ -501,17 +515,17 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   color: white;
   font-size: 2rem;
 }
-@media only screen and (max-width: 325px) {
+@media screen and (min-width: 325px) {
   #hero--section .social--links span.twitter .fa-twitter {
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   #hero--section .social--links span.twitter .fa-twitter {
     font-size: 1.1rem;
   }
 }
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
   #hero--section .social--links span.twitter .fa-twitter {
     font-size: 1.1rem;
   }
