@@ -18,21 +18,32 @@
     font-size: 5rem;
     letter-spacing: 3px;
 
-    @include mq(320px) {
+    @include mq(300px) {
       font-size: 1rem;
-      text-align: center;
     }
 
-    @include mq(380px) {
-      font-size: 1.4rem;
+    @include mq(400px) {
+      font-size: 1.5rem;
     }
 
-    @include mq(450px) {
-      font-size: 1.4rem;
+    @include mq(500px) {
+      font-size: 2rem;
+    }
+
+    @include mq(600px) {
+      font-size: 2.6rem;
+    }
+
+    @include mq(700px) {
+      font-size: 2.6rem;
+    }
+
+    @include mq(740px) {
+      font-size: 3rem;
     }
 
     @include mq(770px) {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
 
   }

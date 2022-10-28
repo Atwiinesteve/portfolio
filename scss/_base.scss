@@ -33,7 +33,7 @@ html {
 }
 
 @mixin mq($size) {
-    @media only screen and (max-width: $size) {
+    @media screen and (min-width: $size) {
         @content;
     }
 }
