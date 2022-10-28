@@ -31,3 +31,9 @@ html {
     overflow-x: hidden;
     background-color: rgb(240, 240, 240);
 }
+
+@mixin mq($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}

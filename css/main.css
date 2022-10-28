@@ -63,17 +63,77 @@ html {
   font-size: 5rem;
   letter-spacing: 3px;
 }
+@media only screen and (max-width: 320px) {
+  .cover--section h1.name--area {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .cover--section h1.name--area {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cover--section h1.name--area {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .cover--section h1.name--area {
+    font-size: 3rem;
+  }
+}
 .cover--section hr.divider {
   width: 300px;
   height: 2px;
   background-color: white;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 325px) {
+  .cover--section hr.divider {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .cover--section hr.divider {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cover--section hr.divider {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .cover--section hr.divider {
+    width: 200px;
+  }
+}
 .cover--section .role--short--desc {
   color: white;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 2rem;
+}
+@media only screen and (max-width: 325px) {
+  .cover--section .role--short--desc {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .cover--section .role--short--desc {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cover--section .role--short--desc {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .cover--section .role--short--desc {
+    font-size: 1.5rem;
+  }
 }
 .cover--section .cover--btns {
   display: -webkit-box;
@@ -102,6 +162,30 @@ html {
   margin: 1rem 1rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media only screen and (max-width: 325px) {
+  .cover--section .cover--btns a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .cover--section .cover--btns a {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cover--section .cover--btns a {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .cover--section .cover--btns a {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+  }
 }
 .cover--section .cover--btns a:nth-child(1):hover, .cover--section .cover--btns a:nth-child(2):hover, .cover--section .cover--btns a:nth-child(3):hover {
   cursor: pointer;
@@ -258,6 +342,51 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media only screen and (max-width: 325px) {
+  #hero--section .social--links {
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #hero--section .social--links {
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #hero--section .social--links {
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 #hero--section .social--links span.gmail {
   padding: 1rem;
   background: rgb(245, 17, 47);
@@ -274,6 +403,21 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 #hero--section .social--links span.gmail .fa-google {
   color: white;
   font-size: 2rem;
+}
+@media only screen and (max-width: 325px) {
+  #hero--section .social--links span.gmail .fa-google {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #hero--section .social--links span.gmail .fa-google {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #hero--section .social--links span.gmail .fa-google {
+    font-size: 1.1rem;
+  }
 }
 #hero--section .social--links span.linkedin {
   padding: 1rem;
@@ -292,6 +436,21 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   color: white;
   font-size: 2.3rem;
 }
+@media only screen and (max-width: 325px) {
+  #hero--section .social--links span.linkedin .fa-linkedin-in {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #hero--section .social--links span.linkedin .fa-linkedin-in {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #hero--section .social--links span.linkedin .fa-linkedin-in {
+    font-size: 1.1rem;
+  }
+}
 #hero--section .social--links span.github {
   padding: 1rem;
   background: rgb(0, 0, 0);
@@ -309,6 +468,21 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
   color: white;
   font-size: 2rem;
 }
+@media only screen and (max-width: 325px) {
+  #hero--section .social--links span.github .fa-github {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #hero--section .social--links span.github .fa-github {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #hero--section .social--links span.github .fa-github {
+    font-size: 1.1rem;
+  }
+}
 #hero--section .social--links span.twitter {
   padding: 1rem;
   background: rgb(7, 138, 245);
@@ -325,6 +499,21 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 #hero--section .social--links span.twitter .fa-twitter {
   color: white;
   font-size: 2rem;
+}
+@media only screen and (max-width: 325px) {
+  #hero--section .social--links span.twitter .fa-twitter {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #hero--section .social--links span.twitter .fa-twitter {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #hero--section .social--links span.twitter .fa-twitter {
+    font-size: 1.1rem;
+  }
 }
 #hero--section .text--area {
   margin-right: 20px;
