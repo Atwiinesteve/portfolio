@@ -17,6 +17,23 @@
     text-transform: uppercase;
     font-size: 5rem;
     letter-spacing: 3px;
+
+    @include mq(320px) {
+      font-size: 1.1rem;
+    }
+
+    @include mq(380px) {
+      font-size: 1.4rem;
+    }
+
+    @include mq(450px) {
+      font-size: 1.4rem;
+    }
+
+    @include mq(770px) {
+      font-size: 3rem;
+    }
+
   }
 
   hr.divider {
@@ -24,6 +41,23 @@
     height: 2px;
     background-color: white;
     margin-bottom: 1rem;
+
+    @include mq(325px) {
+      width: 100px;
+    }
+
+    @include mq(380px) {
+      width: 150px;
+    }
+
+    @include mq(450px) {
+      width: 150px;
+    }
+
+    @include mq(770px) {
+      width: 200px;
+    }
+
   }
 
   .role--short--desc {
@@ -31,6 +65,23 @@
     font-weight: 500;
     text-transform: uppercase;
     font-size: 2rem;
+
+    @include mq(325px) {
+      font-size: 1rem;
+    }
+
+    @include mq(380px) {
+      font-size: 1.2rem;
+    }
+
+    @include mq(450px) {
+      font-size: 1.2rem;
+    }
+
+    @include mq(770px) {
+      font-size: 1.5rem;
+    }
+
   }
 
   .cover--btns {
@@ -51,6 +102,26 @@
       margin: 1rem 1rem;
       transition: all 0.3s ease;
       // animation: twinkle all 0.4s ease;
+      
+      @include mq(325px) {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+      }
+      
+      @include mq(380px) {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+      }
+
+      @include mq(450px) {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      @include mq(770px) {
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+      }
 
       &:nth-child(1):hover,
       &:nth-child(2):hover,
