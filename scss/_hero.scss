@@ -7,6 +7,61 @@
   justify-content: center;
   position: relative;
 
+  @include mq(300px) {
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10rem;
+  }
+  
+  @include mq(400px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10rem;
+  }
+  
+  @include mq(500px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10rem;
+  }
+
+  @include mq(600px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include mq(700px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include mq(800px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include mq(900px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include mq(1020px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
   .social--links {
     position: fixed;
     top: 200px;
@@ -37,6 +92,16 @@
       flex-direction: row;
     }
 
+    @include mq(730px) {
+      top: 200px;
+      flex-direction: column;
+    }
+
+    @include mq(770px) {
+      top: 200px;
+      flex-direction: column;
+    }
+
     span.gmail {
       padding: 1rem;
       background: rgb(245, 17, 47);
@@ -58,6 +123,10 @@
 
         @include mq(450px) {
           font-size: 1.1rem;
+        }
+
+        @include mq(765px) {
+          font-size: 1.4rem;
         }
 
       }
@@ -86,6 +155,10 @@
           font-size: 1.1rem;
         }
 
+        @include mq(765px) {
+          font-size: 1.4rem;
+        }
+
       }
     }
 
@@ -110,6 +183,10 @@
 
         @include mq(450px) {
           font-size: 1.1rem;
+        }
+
+        @include mq(765px) {
+          font-size: 1.4rem;
         }
 
       }
@@ -138,6 +215,10 @@
           font-size: 1.1rem;
         }
 
+        @include mq(765px) {
+          font-size: 1.4rem;
+        }
+
       }
     }
 
@@ -148,11 +229,32 @@
   .text--area {
     margin-right: 20px;
 
+    @include mq(300px) {
+      text-align: center;
+      align-content: center;
+    }
+
+    @include mq(500px) {
+      text-align: center;
+      align-content: center;
+    }
+
+    @include mq(700px) {
+      text-align: center;
+      align-content: center;
+    }
+
+    @include mq(800px) {
+      text-align: center;
+      align-content: center;
+    }
+
     p.greeting--text::before {
       content: '@ ';
       width: 90px;
       height: 3px;
       color: black;
+
     }
 
     p.greeting--text::after {
@@ -167,6 +269,30 @@
       color: rgb(139, 139, 139);
       text-transform: uppercase;
       font-weight: bolder;
+
+      @include mq(300px) {
+        font-size: 1.2rem;
+      }
+
+      @include mq(500px) {
+        font-size: 1.5rem;
+      }
+
+      @include mq(700px) {
+        font-size: 1.5rem;
+      }
+
+      @include mq(800px) {
+        font-size: 1.5rem;
+      }
+
+      @include mq(1020px) {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 1.5rem;
+        margin-bottom: 0;
+      }
+
     }
 
     p.name {
@@ -175,6 +301,32 @@
       font-weight: bolder;
       width: 600px;
       margin-bottom: 5px;
+
+      @include mq(300px) {
+        font-size: 2rem;
+        margin: 1.5rem auto;
+      }
+
+      @include mq(500px) {
+        font-size: 2.5rem;
+        margin: 1.5rem auto;
+      }
+
+      @include mq(700px) {
+        font-size: 3rem;
+        margin: 1.5rem auto;
+      }
+
+      @include mq(800px) {
+        font-size: 3rem;
+        margin: 1.5rem auto;
+      }
+
+      @include mq(1020px) {
+        font-size: 3rem;
+        margin: 1rem auto;
+      }
+
     }
 
     p.short--description {
@@ -185,11 +337,65 @@
       color: rgb(80, 80, 80);
       font-size: 1.2rem;
       font-weight: 500;
+
+      @include mq(300px) {
+        width: 100%;
+        padding: 0rem 6.7rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      @include mq(500px) {
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      @include mq(700px) {
+        width: 100%;
+        font-size: 1.2rem;
+      }
+
+      @include mq(800px) {
+        width: 100%;
+        font-size: 1.2rem;
+      }
+
+      
+      @include mq(1020px) {
+        width: 500px;
+        text-align: left;
+        padding: 0.1rem 1.5rem;
+      }
+
     }
 
     .buttons {
       display: flex;
-      align-items: center;
+
+      @include mq(300px) {
+        display: block;
+        margin: 2rem auto;
+      }
+
+      @include mq(500px) {
+        display: block;
+        margin: 2rem auto;
+      }
+
+      @include mq(700px) {
+        display: block;
+        margin: 2rem auto;
+      }
+
+      @include mq(800px) {
+        display: block;
+        margin: 2rem auto;
+      }
+
+      @include mq(1020px) {
+        display: flex;
+        margin: auto 1.4rem;
+      }
 
       a {
         padding: 1rem 2rem;
@@ -202,6 +408,11 @@
         font-weight: bolder;
         letter-spacing: 1px;
         border: 3px solid rgb(21, 21, 250);
+
+        @include mq(300px) {
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+        }
         
         &:focus,
         &:active {
@@ -246,6 +457,32 @@
       transition: all 0.3s ease;
       box-shadow: 8px 3px 20px 0px rgb(177, 177, 177);
       object-fit: cover;
+
+      @include mq(300px) {
+        width: 250px;
+        height: 250px;
+      }
+
+      @include mq(500px) {
+        width: 350px;
+        height: 350px;
+      }
+
+      @include mq(700px) {
+        width: 450px;
+        height: 450px;
+      }
+
+      @include mq(800px) {
+        width: 450px;
+        height: 450px;
+      }
+
+      
+      @include mq(1020px) {
+        width: 390px;
+        height: 390px;
+      }
       
       &:hover {
         transform: rotate(0deg);
