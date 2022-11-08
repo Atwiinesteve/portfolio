@@ -303,7 +303,7 @@
       margin-bottom: 5px;
 
       @include mq(300px) {
-        font-size: 2rem;
+        font-size: 1.65rem;
         margin: 1.5rem auto;
       }
 
@@ -340,8 +340,8 @@
 
       @include mq(300px) {
         width: 100%;
-        padding: 0rem 6.7rem;
-        font-size: 0.9rem;
+        padding: 0rem 9rem;
+        font-size: 1rem;
         text-align: center;
       }
 
@@ -459,6 +459,7 @@
       object-fit: cover;
 
       @include mq(300px) {
+        margin-top: 4rem;
         width: 250px;
         height: 250px;
       }
