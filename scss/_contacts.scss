@@ -10,7 +10,8 @@
   align-items: center;
 
   @include mq(300px) {
-    height: 130vh;
+    margin-top: 35rem;
+    height: 100vh;
   }
 
   @include mq(500px) {
