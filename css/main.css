@@ -1501,7 +1501,8 @@ section#resume--area p.coming--soon {
 }
 @media screen and (min-width: 300px) {
   #contacts--area {
-    height: 130vh;
+    margin-top: 35rem;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 500px) {
