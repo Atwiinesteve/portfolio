@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
 
+  @include mq(300px) {
+    margin-top: 30rem;
+  }
+
   .contacts--header {
     display: flex;
     align-items: center;
@@ -16,6 +20,10 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
+
+    @include mq(300px) {
+      font-size: 1.6rem;
+    }
 
     span {
       font-family: 'Fasthand', cursive;
@@ -33,6 +41,11 @@
     width: 500px;
     height: 800px;
 
+    @include mq(300px) {
+      width: 400px;
+      height: 500px;
+    }
+
     form {
 
       .name {
@@ -42,6 +55,11 @@
           font-weight: bolder;
           text-transform: uppercase;
           font-size: 1.5rem;
+
+          @include mq(300px) {
+            font-size: 1.2rem;
+          }
+
         }
 
         input {
@@ -50,6 +68,11 @@
           padding: 0.7rem 1rem;
           outline: none;
           border: 1px solid gray;
+
+          @include mq(300px) {
+            padding: 0.5rem;
+          }
+
         }
 
         input[type=text],
@@ -68,6 +91,10 @@
           font-weight: bolder;
           text-transform: uppercase;
           font-size: 1.5rem;
+
+          @include mq(300px) {
+            font-size: 1.2rem;
+          }
         }
 
         input {
@@ -76,6 +103,11 @@
           padding: 0.7rem 1rem;
           outline: none;
           border: 1px solid gray;
+
+          @include mq(300px) {
+            padding: 0.5rem;
+          }
+
         }
 
         input[type=email],
@@ -94,6 +126,11 @@
           font-weight: bolder;
           text-transform: uppercase;
           font-size: 1.5rem;
+
+          @include mq(300px) {
+            font-size: 1.2rem;
+          }
+
         }
 
         textarea {
@@ -105,6 +142,11 @@
           border: 1px solid gray;
           font-family: 'Quicksand', sans-serif;
           font-size: 1.3rem;
+
+          @include mq(300px) {
+            height: 200px;
+          }
+
         }
 
       }
@@ -124,6 +166,11 @@
           background-color: blue;
           color: white;
 
+          @include mq(300px) {
+            font-size: 1rem;
+            padding: 0.5rem;
+          }
+
           .fa-telegram {
             width: 30px;
             height: 30px;
@@ -139,7 +186,5 @@
     }
 
   }
-
-
 
 }

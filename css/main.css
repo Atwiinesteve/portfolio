@@ -1068,12 +1068,30 @@ section#resume--area p.coming--soon {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--1 .project--description h3.project--name,
+#projects--area .projects--container .project--2 .project--description h3.project--name,
+#projects--area .projects--container .project--3 .project--description h3.project--name,
+#projects--area .projects--container .project--4 .project--description h3.project--name,
+#projects--area .projects--container .project--5 .project--description h3.project--name {
+    font-size: 1.3rem;
+  }
+}
 #projects--area .projects--container .project--1 .project--description p.description,
 #projects--area .projects--container .project--2 .project--description p.description,
 #projects--area .projects--container .project--3 .project--description p.description,
 #projects--area .projects--container .project--4 .project--description p.description,
 #projects--area .projects--container .project--5 .project--description p.description {
   font-size: 1.3rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--1 .project--description p.description,
+#projects--area .projects--container .project--2 .project--description p.description,
+#projects--area .projects--container .project--3 .project--description p.description,
+#projects--area .projects--container .project--4 .project--description p.description,
+#projects--area .projects--container .project--5 .project--description p.description {
+    font-size: 1.1rem;
+  }
 }
 #projects--area .projects--container .project--1 .project--description .tech--used h4,
 #projects--area .projects--container .project--2 .project--description .tech--used h4,
@@ -1121,6 +1139,20 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--5 .project--description .project--btns button:hover {
   background-color: rgb(59, 59, 252);
 }
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--1 .project--description {
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--1 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 #projects--area .projects--container .project--2 {
   margin-top: 2rem;
   display: -webkit-box;
@@ -1134,6 +1166,20 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description {
   text-align: right;
   margin-right: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--2 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 #projects--area .projects--container .project--3 {
   margin-top: 2rem;
@@ -1149,6 +1195,19 @@ section#resume--area p.coming--soon {
   text-align: left;
   margin-right: 1rem;
 }
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--3 .project--description {
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 #projects--area .projects--container .project--4 {
   margin-top: 2rem;
   display: -webkit-box;
@@ -1162,6 +1221,20 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--4 .project--description {
   text-align: right;
   margin-right: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--4 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 #projects--area .projects--container .project--5 {
   margin-top: 2rem;
@@ -1177,15 +1250,39 @@ section#resume--area p.coming--soon {
   text-align: left;
   margin-right: 1rem;
 }
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--5 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 #experiences--area {
   height: 60vh;
   margin: 20rem;
 }
+@media screen and (min-width: 300px) {
+  #experiences--area {
+    margin: 5rem 2rem;
+  }
+}
 #experiences--area .experiences--header {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1.4rem;
+}
+@media screen and (min-width: 300px) {
+  #experiences--area .experiences--header {
+    font-size: 1.5rem;
+  }
 }
 #experiences--area .experience--desc--container {
   display: -webkit-box;
@@ -1197,14 +1294,27 @@ section#resume--area p.coming--soon {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media screen and (min-width: 300px) {
+  #experiences--area .experience--desc--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 #experiences--area .experience--desc--container p.experiences--description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
   margin-right: 1rem;
   line-height: 1.7;
+}
+@media screen and (min-width: 300px) {
+  #experiences--area .experience--desc--container p.experiences--description {
+    margin-bottom: 1.3rem;
+  }
 }
 #experiences--area .experience--desc--container .technology--images {
   -webkit-box-flex: 50%;
@@ -1240,6 +1350,11 @@ section#resume--area p.coming--soon {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 300px) {
+  #contacts--area {
+    margin-top: 30rem;
+  }
+}
 #contacts--area .contacts--header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1254,6 +1369,11 @@ section#resume--area p.coming--soon {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 300px) {
+  #contacts--area .contacts--header {
+    font-size: 1.6rem;
+  }
+}
 #contacts--area .contacts--header span {
   font-family: "Fasthand", cursive;
 }
@@ -1266,6 +1386,12 @@ section#resume--area p.coming--soon {
   width: 500px;
   height: 800px;
 }
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area {
+    width: 400px;
+    height: 500px;
+  }
+}
 #contacts--area .form--area form .name {
   margin-bottom: 1.2rem;
 }
@@ -1274,12 +1400,22 @@ section#resume--area p.coming--soon {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area form .name label {
+    font-size: 1.2rem;
+  }
+}
 #contacts--area .form--area form .name input {
   margin-top: 1rem;
   width: 100%;
   padding: 0.7rem 1rem;
   outline: none;
   border: 1px solid gray;
+}
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area form .name input {
+    padding: 0.5rem;
+  }
 }
 #contacts--area .form--area form .name input[type=text],
 #contacts--area .form--area form .name input[type=text] {
@@ -1295,12 +1431,22 @@ section#resume--area p.coming--soon {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area form .email label {
+    font-size: 1.2rem;
+  }
+}
 #contacts--area .form--area form .email input {
   margin-top: 1rem;
   width: 100%;
   padding: 0.7rem 1rem;
   outline: none;
   border: 1px solid gray;
+}
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area form .email input {
+    padding: 0.5rem;
+  }
 }
 #contacts--area .form--area form .email input[type=email],
 #contacts--area .form--area form .email input[type=email] {
@@ -1316,6 +1462,11 @@ section#resume--area p.coming--soon {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area form .message label {
+    font-size: 1.2rem;
+  }
+}
 #contacts--area .form--area form .message textarea {
   margin-top: 1rem;
   width: 100%;
@@ -1325,6 +1476,11 @@ section#resume--area p.coming--soon {
   border: 1px solid gray;
   font-family: "Quicksand", sans-serif;
   font-size: 1.3rem;
+}
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area form .message textarea {
+    height: 200px;
+  }
 }
 #contacts--area .form--area form .submit--btn button {
   display: -webkit-box;
@@ -1346,6 +1502,12 @@ section#resume--area p.coming--soon {
   background-color: blue;
   color: white;
 }
+@media screen and (min-width: 300px) {
+  #contacts--area .form--area form .submit--btn button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
 #contacts--area .form--area form .submit--btn button .fa-telegram {
   width: 30px;
   height: 30px;
@@ -1365,6 +1527,17 @@ footer#footer--area {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: rgb(252, 244, 233);
+  margin-top: 2rem;
+}
+@media screen and (min-width: 300px) {
+  footer#footer--area {
+    height: 20vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 2;
+  }
 }
 footer#footer--area .copyrights p.copyright {
   font-weight: bold;
@@ -1381,6 +1554,15 @@ footer#footer--area .contacts {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (min-width: 300px) {
+  footer#footer--area .contacts {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 footer#footer--area .contacts .write--message {
   margin-right: 1rem;

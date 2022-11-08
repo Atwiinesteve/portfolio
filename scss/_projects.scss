@@ -44,10 +44,20 @@
           font-size: 2rem;
           margin-bottom: 0.5rem;
           text-transform: uppercase;
+
+          @include mq(300px) {
+            font-size: 1.3rem;
+          }
+
         }
 
         p.description {
           font-size: 1.3rem;
+
+          @include mq(300px) {
+            font-size: 1.1rem;
+          }
+
         }
 
         .tech--used {
@@ -86,6 +96,21 @@
 
     }
 
+    .project--1 {
+
+      .project--description {
+        @include mq(300px) {
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        padding: 1rem 2rem;
+        flex-direction: column;
+      }
+
+    }
+
     .project--2 {
       margin-top: 2rem;
       display: flex;
@@ -94,6 +119,16 @@
       .project--description {
         text-align: right;
         margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
       }
 
     }
@@ -106,6 +141,14 @@
       .project--description {
         text-align: left;
         margin-right: 1rem;
+
+        @include mq(300px) {
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
       }
 
     }
@@ -118,6 +161,15 @@
       .project--description {
         text-align: right;
         margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
       }
 
     }
@@ -130,6 +182,15 @@
       .project--description {
         text-align: left;
         margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
       }
 
     }
