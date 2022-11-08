@@ -6,6 +6,11 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
+
+    @include mq(400px) {
+      font-size: 1.2rem;
+    }
+
   }
 
   .projects--container {
@@ -36,12 +41,26 @@
           width: 450px;
           height: 270px;
           object-fit: cover;
+
+          @include mq(400px) {
+            width: 400px;
+            height: 300px;
+          }
+
         }
       }
 
       .project--description {
         width: 500px;
         margin-left: 1rem;
+
+        @include mq(300px) {
+          width: 400px;
+        }
+
+        @include mq(400px) {
+          width: 460px;
+        }
         
         h3.project--name {
           font-size: 2rem;
