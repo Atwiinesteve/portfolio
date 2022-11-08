@@ -65,7 +65,7 @@ html {
 }
 @media screen and (min-width: 300px) {
   .cover--section h1.name--area {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 400px) {
@@ -773,7 +773,7 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 }
 @media screen and (min-width: 300px) {
   #hero--section .text--area p.name {
-    font-size: 2rem;
+    font-size: 1.65rem;
     margin: 1.5rem auto;
   }
 }
@@ -813,8 +813,8 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 @media screen and (min-width: 300px) {
   #hero--section .text--area p.short--description {
     width: 100%;
-    padding: 0rem 6.7rem;
-    font-size: 0.9rem;
+    padding: 0rem 9rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -940,6 +940,7 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
 }
 @media screen and (min-width: 300px) {
   #hero--section .image--area img.profile--picture {
+    margin-top: 4rem;
     width: 250px;
     height: 250px;
   }
