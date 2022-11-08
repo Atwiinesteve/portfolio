@@ -1394,6 +1394,7 @@ section#resume--area p.coming--soon {
 @media screen and (min-width: 300px) {
   #experiences--area .experience--desc--container p.experiences--description {
     margin-bottom: 1.3rem;
+    font-size: 1rem;
   }
 }
 #experiences--area .experience--desc--container .technology--images {
@@ -1425,8 +1426,8 @@ section#resume--area p.coming--soon {
 }
 @media screen and (min-width: 900px) {
   #experiences--area .experience--desc--container .technology--images img {
-    width: 118px;
-    height: 118px;
+    width: 101px;
+    height: 101px;
   }
 }
 
