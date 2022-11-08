@@ -1153,6 +1153,15 @@ section#resume--area p.coming--soon {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--1 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 #projects--area .projects--container .project--2 {
   margin-top: 2rem;
   display: -webkit-box;
@@ -1181,6 +1190,15 @@ section#resume--area p.coming--soon {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--2 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
 #projects--area .projects--container .project--3 {
   margin-top: 2rem;
   display: -webkit-box;
@@ -1206,6 +1224,15 @@ section#resume--area p.coming--soon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--3 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 #projects--area .projects--container .project--4 {
@@ -1236,6 +1263,15 @@ section#resume--area p.coming--soon {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--4 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
 #projects--area .projects--container .project--5 {
   margin-top: 2rem;
   display: -webkit-box;
@@ -1262,6 +1298,15 @@ section#resume--area p.coming--soon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--5 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 

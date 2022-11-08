@@ -109,6 +109,11 @@
         flex-direction: column;
       }
 
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row;
+      }
+
     }
 
     .project--2 {
@@ -131,6 +136,11 @@
         flex-direction: column;
       }
 
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row-reverse;
+      }
+
     }
 
     .project--3 {
@@ -149,6 +159,11 @@
 
       @include mq(300px) {
         flex-direction: column;
+      }
+
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row;
       }
 
     }
@@ -172,6 +187,11 @@
         flex-direction: column;
       }
 
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row-reverse;
+      }
+
     }
 
     .project--5 {
@@ -191,6 +211,11 @@
 
       @include mq(300px) {
         flex-direction: column;
+      }
+
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row;
       }
 
     }
