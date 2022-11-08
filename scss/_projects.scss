@@ -7,6 +7,10 @@
     font-size: 2rem;
     margin-bottom: 2rem;
 
+    @include mq(300px) {
+      font-size: 1.2rem;
+    }
+
     @include mq(400px) {
       font-size: 1.2rem;
     }
@@ -21,7 +25,7 @@
     flex-direction: column;
 
     @include mq(300px) {
-      padding: 1rem 10rem;
+      padding: 1rem 3rem;
     }
 
     .project--1,
@@ -42,6 +46,12 @@
           height: 270px;
           object-fit: cover;
 
+          @include mq(300px) {
+            object-fit: contain;
+            width: 340px;
+            height: 220px;
+          }
+
           @include mq(400px) {
             width: 400px;
             height: 300px;
@@ -55,7 +65,7 @@
         margin-left: 1rem;
 
         @include mq(300px) {
-          width: 400px;
+          width: 390px;
         }
 
         @include mq(400px) {
@@ -77,8 +87,7 @@
           font-size: 1.3rem;
 
           @include mq(300px) {
-            font-size: 1rem;
-            width: 400px;
+            font-size: 0.95rem;
           }
 
           @include mq(500px) {
