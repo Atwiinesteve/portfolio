@@ -13,6 +13,16 @@ footer#footer--area {
     line-height: 2;
   }
 
+  @include mq(600px) {
+    height: 10vh;
+    flex-direction: row;
+  }
+
+  @include mq(900px) {
+    height: 10vh;
+    flex-direction: row;
+  }
+
   .copyrights {
     p.copyright {
       font-weight: bold;
@@ -30,6 +40,20 @@ footer#footer--area {
       text-align: center;
       flex-direction: column;
     }
+    
+    @include mq(500px) {
+      flex-direction: row;
+      line-height: 2;
+    }
+    
+    @include mq(800px) {
+      flex-direction: row;
+      line-height: 2;
+    }
+
+    // @include mq(900px) {
+    //   flex-direction: row;
+    // }
 
     .write--message {
       margin-right: 1rem;
