@@ -1064,8 +1064,8 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--5 .project--image img {
   width: 450px;
   height: 270px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 300px) {
   #projects--area .projects--container .project--1 .project--image img,
@@ -1085,8 +1085,22 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--3 .project--image img,
 #projects--area .projects--container .project--4 .project--image img,
 #projects--area .projects--container .project--5 .project--image img {
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 400px;
     height: 300px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #projects--area .projects--container .project--1 .project--image img,
+#projects--area .projects--container .project--2 .project--image img,
+#projects--area .projects--container .project--3 .project--image img,
+#projects--area .projects--container .project--4 .project--image img,
+#projects--area .projects--container .project--5 .project--image img {
+    width: 500px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 #projects--area .projects--container .project--1 .project--description,
@@ -1188,10 +1202,10 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--3 .project--description .project--btns button,
 #projects--area .projects--container .project--4 .project--description .project--btns button,
 #projects--area .projects--container .project--5 .project--description .project--btns button {
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 1rem;
   font-family: "Quicksand", sans-serif;
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 1rem;
   outline: none;
   border: none;
   color: white;
