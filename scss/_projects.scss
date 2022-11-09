@@ -32,7 +32,12 @@
     .project--2,
     .project--3,
     .project--4,
-    .project--5 {
+    .project--5,
+    .project--6,
+    .project--7,
+    .project--8,
+    .project--9,
+    .project--10 {
       width: 100%;
       align-self: center;
       align-content: center;
@@ -44,7 +49,7 @@
         img {
           width: 450px;
           height: 270px;
-          object-fit: cover;
+          object-fit: contain;
 
           @include mq(300px) {
             object-fit: contain;
@@ -53,8 +58,15 @@
           }
 
           @include mq(400px) {
+            object-fit: contain;
             width: 400px;
             height: 300px;
+          }
+
+          @include mq(700px) {
+            width: 500px;
+            height: 400px;
+            object-fit: contain;
           }
 
         }
@@ -112,11 +124,12 @@
         .project--btns {
           margin-top: 0.9rem;
           
-          button {
-            padding: 0.7rem 1rem;
+          a.view--project {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
             font-family: 'Quicksand', sans-serif;
             font-weight: bolder;
-            font-size: 1.2rem;
+            font-size: 1rem;
             outline: none;
             border: none;
             color: white;
@@ -154,7 +167,7 @@
     }
 
     .project--2 {
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: flex;
       flex-direction: row-reverse;
 
@@ -181,7 +194,7 @@
     }
 
     .project--3 {
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: flex;
       flex-direction: row;
 
@@ -206,7 +219,7 @@
     }
 
     .project--4 {
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: flex;
       flex-direction: row-reverse;
 
@@ -232,7 +245,7 @@
     }
 
     .project--5 {
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: flex;
       flex-direction: row;
 
@@ -253,6 +266,136 @@
       @include mq(1020px) {
         padding: 1rem 2rem;
         flex-direction: row;
+      }
+
+    }
+
+    .project--6 {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .project--description {
+        text-align: left;
+        margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
+      }
+
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row-reverse;
+      }
+
+    }
+
+    .project--7 {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+
+      .project--description {
+        text-align: left;
+        margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
+      }
+
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row;
+      }
+
+    }
+
+    .project--8 {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .project--description {
+        text-align: left;
+        margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
+      }
+
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row-reverse;
+      }
+
+    }
+
+    .project--9 {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+
+      .project--description {
+        text-align: left;
+        margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
+      }
+
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row;
+      }
+
+    }
+
+    .project--10 {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .project--description {
+        text-align: left;
+        margin-right: 1rem;
+
+        @include mq(300px) {
+          text-align: left;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      @include mq(300px) {
+        flex-direction: column;
+      }
+
+      @include mq(1020px) {
+        padding: 1rem 2rem;
+        flex-direction: row-reverse;
       }
 
     }

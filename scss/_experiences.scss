@@ -11,7 +11,7 @@
   }
 
   @include mq(1000px) {
-    margin: 16rem 8rem 0rem 8rem;
+    margin: 16rem 10rem 0rem 10rem;
   }
 
   .experiences--header {
@@ -51,6 +51,14 @@
         font-size: 1rem;
       }
 
+      @include mq(500px) {
+        font-size: 1.2rem;
+      }
+    
+      @include mq(1000px) {
+        font-size: 1.3rem;
+      }
+
     }
 
     .technology--images {
@@ -76,6 +84,11 @@
         @include mq(900px) {
           width: 101px;
           height: 101px;
+        }
+
+        @include mq(1000px) {
+          width: 153px;
+          height: 153px;
         }
 
       }

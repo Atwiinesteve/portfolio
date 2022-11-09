@@ -1041,7 +1041,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2,
 #projects--area .projects--container .project--3,
 #projects--area .projects--container .project--4,
-#projects--area .projects--container .project--5 {
+#projects--area .projects--container .project--5,
+#projects--area .projects--container .project--6,
+#projects--area .projects--container .project--7,
+#projects--area .projects--container .project--8,
+#projects--area .projects--container .project--9,
+#projects--area .projects--container .project--10 {
   width: 100%;
   -ms-flex-item-align: center;
       align-self: center;
@@ -1061,18 +1066,28 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--image img,
 #projects--area .projects--container .project--3 .project--image img,
 #projects--area .projects--container .project--4 .project--image img,
-#projects--area .projects--container .project--5 .project--image img {
+#projects--area .projects--container .project--5 .project--image img,
+#projects--area .projects--container .project--6 .project--image img,
+#projects--area .projects--container .project--7 .project--image img,
+#projects--area .projects--container .project--8 .project--image img,
+#projects--area .projects--container .project--9 .project--image img,
+#projects--area .projects--container .project--10 .project--image img {
   width: 450px;
   height: 270px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 300px) {
   #projects--area .projects--container .project--1 .project--image img,
 #projects--area .projects--container .project--2 .project--image img,
 #projects--area .projects--container .project--3 .project--image img,
 #projects--area .projects--container .project--4 .project--image img,
-#projects--area .projects--container .project--5 .project--image img {
+#projects--area .projects--container .project--5 .project--image img,
+#projects--area .projects--container .project--6 .project--image img,
+#projects--area .projects--container .project--7 .project--image img,
+#projects--area .projects--container .project--8 .project--image img,
+#projects--area .projects--container .project--9 .project--image img,
+#projects--area .projects--container .project--10 .project--image img {
     -o-object-fit: contain;
        object-fit: contain;
     width: 340px;
@@ -1084,16 +1099,45 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--image img,
 #projects--area .projects--container .project--3 .project--image img,
 #projects--area .projects--container .project--4 .project--image img,
-#projects--area .projects--container .project--5 .project--image img {
+#projects--area .projects--container .project--5 .project--image img,
+#projects--area .projects--container .project--6 .project--image img,
+#projects--area .projects--container .project--7 .project--image img,
+#projects--area .projects--container .project--8 .project--image img,
+#projects--area .projects--container .project--9 .project--image img,
+#projects--area .projects--container .project--10 .project--image img {
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 400px;
     height: 300px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #projects--area .projects--container .project--1 .project--image img,
+#projects--area .projects--container .project--2 .project--image img,
+#projects--area .projects--container .project--3 .project--image img,
+#projects--area .projects--container .project--4 .project--image img,
+#projects--area .projects--container .project--5 .project--image img,
+#projects--area .projects--container .project--6 .project--image img,
+#projects--area .projects--container .project--7 .project--image img,
+#projects--area .projects--container .project--8 .project--image img,
+#projects--area .projects--container .project--9 .project--image img,
+#projects--area .projects--container .project--10 .project--image img {
+    width: 500px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 #projects--area .projects--container .project--1 .project--description,
 #projects--area .projects--container .project--2 .project--description,
 #projects--area .projects--container .project--3 .project--description,
 #projects--area .projects--container .project--4 .project--description,
-#projects--area .projects--container .project--5 .project--description {
+#projects--area .projects--container .project--5 .project--description,
+#projects--area .projects--container .project--6 .project--description,
+#projects--area .projects--container .project--7 .project--description,
+#projects--area .projects--container .project--8 .project--description,
+#projects--area .projects--container .project--9 .project--description,
+#projects--area .projects--container .project--10 .project--description {
   width: 500px;
   margin-left: 1rem;
 }
@@ -1102,7 +1146,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description,
 #projects--area .projects--container .project--3 .project--description,
 #projects--area .projects--container .project--4 .project--description,
-#projects--area .projects--container .project--5 .project--description {
+#projects--area .projects--container .project--5 .project--description,
+#projects--area .projects--container .project--6 .project--description,
+#projects--area .projects--container .project--7 .project--description,
+#projects--area .projects--container .project--8 .project--description,
+#projects--area .projects--container .project--9 .project--description,
+#projects--area .projects--container .project--10 .project--description {
     width: 390px;
   }
 }
@@ -1111,7 +1160,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description,
 #projects--area .projects--container .project--3 .project--description,
 #projects--area .projects--container .project--4 .project--description,
-#projects--area .projects--container .project--5 .project--description {
+#projects--area .projects--container .project--5 .project--description,
+#projects--area .projects--container .project--6 .project--description,
+#projects--area .projects--container .project--7 .project--description,
+#projects--area .projects--container .project--8 .project--description,
+#projects--area .projects--container .project--9 .project--description,
+#projects--area .projects--container .project--10 .project--description {
     width: 460px;
   }
 }
@@ -1119,7 +1173,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description h3.project--name,
 #projects--area .projects--container .project--3 .project--description h3.project--name,
 #projects--area .projects--container .project--4 .project--description h3.project--name,
-#projects--area .projects--container .project--5 .project--description h3.project--name {
+#projects--area .projects--container .project--5 .project--description h3.project--name,
+#projects--area .projects--container .project--6 .project--description h3.project--name,
+#projects--area .projects--container .project--7 .project--description h3.project--name,
+#projects--area .projects--container .project--8 .project--description h3.project--name,
+#projects--area .projects--container .project--9 .project--description h3.project--name,
+#projects--area .projects--container .project--10 .project--description h3.project--name {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -1129,7 +1188,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description h3.project--name,
 #projects--area .projects--container .project--3 .project--description h3.project--name,
 #projects--area .projects--container .project--4 .project--description h3.project--name,
-#projects--area .projects--container .project--5 .project--description h3.project--name {
+#projects--area .projects--container .project--5 .project--description h3.project--name,
+#projects--area .projects--container .project--6 .project--description h3.project--name,
+#projects--area .projects--container .project--7 .project--description h3.project--name,
+#projects--area .projects--container .project--8 .project--description h3.project--name,
+#projects--area .projects--container .project--9 .project--description h3.project--name,
+#projects--area .projects--container .project--10 .project--description h3.project--name {
     font-size: 1.3rem;
   }
 }
@@ -1137,7 +1201,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description p.description,
 #projects--area .projects--container .project--3 .project--description p.description,
 #projects--area .projects--container .project--4 .project--description p.description,
-#projects--area .projects--container .project--5 .project--description p.description {
+#projects--area .projects--container .project--5 .project--description p.description,
+#projects--area .projects--container .project--6 .project--description p.description,
+#projects--area .projects--container .project--7 .project--description p.description,
+#projects--area .projects--container .project--8 .project--description p.description,
+#projects--area .projects--container .project--9 .project--description p.description,
+#projects--area .projects--container .project--10 .project--description p.description {
   font-size: 1.3rem;
 }
 @media screen and (min-width: 300px) {
@@ -1145,7 +1214,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description p.description,
 #projects--area .projects--container .project--3 .project--description p.description,
 #projects--area .projects--container .project--4 .project--description p.description,
-#projects--area .projects--container .project--5 .project--description p.description {
+#projects--area .projects--container .project--5 .project--description p.description,
+#projects--area .projects--container .project--6 .project--description p.description,
+#projects--area .projects--container .project--7 .project--description p.description,
+#projects--area .projects--container .project--8 .project--description p.description,
+#projects--area .projects--container .project--9 .project--description p.description,
+#projects--area .projects--container .project--10 .project--description p.description {
     font-size: 0.95rem;
   }
 }
@@ -1154,7 +1228,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description p.description,
 #projects--area .projects--container .project--3 .project--description p.description,
 #projects--area .projects--container .project--4 .project--description p.description,
-#projects--area .projects--container .project--5 .project--description p.description {
+#projects--area .projects--container .project--5 .project--description p.description,
+#projects--area .projects--container .project--6 .project--description p.description,
+#projects--area .projects--container .project--7 .project--description p.description,
+#projects--area .projects--container .project--8 .project--description p.description,
+#projects--area .projects--container .project--9 .project--description p.description,
+#projects--area .projects--container .project--10 .project--description p.description {
     font-size: 1.1rem;
     width: 400px;
   }
@@ -1163,7 +1242,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description .tech--used h4,
 #projects--area .projects--container .project--3 .project--description .tech--used h4,
 #projects--area .projects--container .project--4 .project--description .tech--used h4,
-#projects--area .projects--container .project--5 .project--description .tech--used h4 {
+#projects--area .projects--container .project--5 .project--description .tech--used h4,
+#projects--area .projects--container .project--6 .project--description .tech--used h4,
+#projects--area .projects--container .project--7 .project--description .tech--used h4,
+#projects--area .projects--container .project--8 .project--description .tech--used h4,
+#projects--area .projects--container .project--9 .project--description .tech--used h4,
+#projects--area .projects--container .project--10 .project--description .tech--used h4 {
   text-transform: capitalize;
   margin: 0.8rem 0 0 0;
   font-size: 1.3rem;
@@ -1172,7 +1256,12 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description .tech--used p,
 #projects--area .projects--container .project--3 .project--description .tech--used p,
 #projects--area .projects--container .project--4 .project--description .tech--used p,
-#projects--area .projects--container .project--5 .project--description .tech--used p {
+#projects--area .projects--container .project--5 .project--description .tech--used p,
+#projects--area .projects--container .project--6 .project--description .tech--used p,
+#projects--area .projects--container .project--7 .project--description .tech--used p,
+#projects--area .projects--container .project--8 .project--description .tech--used p,
+#projects--area .projects--container .project--9 .project--description .tech--used p,
+#projects--area .projects--container .project--10 .project--description .tech--used p {
   margin-top: 0.5rem;
   font-size: 1.1rem;
 }
@@ -1180,29 +1269,45 @@ section#resume--area p.coming--soon {
 #projects--area .projects--container .project--2 .project--description .project--btns,
 #projects--area .projects--container .project--3 .project--description .project--btns,
 #projects--area .projects--container .project--4 .project--description .project--btns,
-#projects--area .projects--container .project--5 .project--description .project--btns {
+#projects--area .projects--container .project--5 .project--description .project--btns,
+#projects--area .projects--container .project--6 .project--description .project--btns,
+#projects--area .projects--container .project--7 .project--description .project--btns,
+#projects--area .projects--container .project--8 .project--description .project--btns,
+#projects--area .projects--container .project--9 .project--description .project--btns,
+#projects--area .projects--container .project--10 .project--description .project--btns {
   margin-top: 0.9rem;
 }
-#projects--area .projects--container .project--1 .project--description .project--btns button,
-#projects--area .projects--container .project--2 .project--description .project--btns button,
-#projects--area .projects--container .project--3 .project--description .project--btns button,
-#projects--area .projects--container .project--4 .project--description .project--btns button,
-#projects--area .projects--container .project--5 .project--description .project--btns button {
-  padding: 0.7rem 1rem;
+#projects--area .projects--container .project--1 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--2 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--3 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--4 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--5 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--6 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--7 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--8 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--9 .project--description .project--btns a.view--project,
+#projects--area .projects--container .project--10 .project--description .project--btns a.view--project {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
   font-family: "Quicksand", sans-serif;
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 1rem;
   outline: none;
   border: none;
   color: white;
   background-color: blue;
   cursor: pointer;
 }
-#projects--area .projects--container .project--1 .project--description .project--btns button:hover,
-#projects--area .projects--container .project--2 .project--description .project--btns button:hover,
-#projects--area .projects--container .project--3 .project--description .project--btns button:hover,
-#projects--area .projects--container .project--4 .project--description .project--btns button:hover,
-#projects--area .projects--container .project--5 .project--description .project--btns button:hover {
+#projects--area .projects--container .project--1 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--2 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--3 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--4 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--5 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--6 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--7 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--8 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--9 .project--description .project--btns a.view--project:hover,
+#projects--area .projects--container .project--10 .project--description .project--btns a.view--project:hover {
   background-color: rgb(59, 59, 252);
 }
 @media screen and (min-width: 300px) {
@@ -1229,7 +1334,7 @@ section#resume--area p.coming--soon {
   }
 }
 #projects--area .projects--container .project--2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1266,7 +1371,7 @@ section#resume--area p.coming--soon {
   }
 }
 #projects--area .projects--container .project--3 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1302,7 +1407,7 @@ section#resume--area p.coming--soon {
   }
 }
 #projects--area .projects--container .project--4 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1339,7 +1444,7 @@ section#resume--area p.coming--soon {
   }
 }
 #projects--area .projects--container .project--5 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1375,6 +1480,191 @@ section#resume--area p.coming--soon {
             flex-direction: row;
   }
 }
+#projects--area .projects--container .project--6 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#projects--area .projects--container .project--6 .project--description {
+  text-align: left;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--6 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--6 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+#projects--area .projects--container .project--7 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#projects--area .projects--container .project--7 .project--description {
+  text-align: left;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--7 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--7 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--7 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+#projects--area .projects--container .project--8 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#projects--area .projects--container .project--8 .project--description {
+  text-align: left;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--8 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--8 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--8 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+#projects--area .projects--container .project--9 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#projects--area .projects--container .project--9 .project--description {
+  text-align: left;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--9 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--9 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--9 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+#projects--area .projects--container .project--10 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#projects--area .projects--container .project--10 .project--description {
+  text-align: left;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--10 .project--description {
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #projects--area .projects--container .project--10 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #projects--area .projects--container .project--10 {
+    padding: 1rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
 
 #experiences--area {
   height: 60vh;
@@ -1392,7 +1682,7 @@ section#resume--area p.coming--soon {
 }
 @media screen and (min-width: 1000px) {
   #experiences--area {
-    margin: 16rem 8rem 0rem 8rem;
+    margin: 16rem 10rem 0rem 10rem;
   }
 }
 #experiences--area .experiences--header {
@@ -1447,6 +1737,16 @@ section#resume--area p.coming--soon {
     font-size: 1rem;
   }
 }
+@media screen and (min-width: 500px) {
+  #experiences--area .experience--desc--container p.experiences--description {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #experiences--area .experience--desc--container p.experiences--description {
+    font-size: 1.3rem;
+  }
+}
 #experiences--area .experience--desc--container .technology--images {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
@@ -1478,6 +1778,12 @@ section#resume--area p.coming--soon {
   #experiences--area .experience--desc--container .technology--images img {
     width: 101px;
     height: 101px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #experiences--area .experience--desc--container .technology--images img {
+    width: 153px;
+    height: 153px;
   }
 }
 
