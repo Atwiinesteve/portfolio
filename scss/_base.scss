@@ -32,6 +32,11 @@ html {
     background-color: rgb(240, 240, 240);
 }
 
+.margin__top {
+    margin-top: 10rem!important;
+}
+
+
 @mixin mq($size) {
     @media screen and (min-width: $size) {
         @content;
