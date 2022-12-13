@@ -9,7 +9,7 @@
   align-items: center;
 
   @include mq(300px) {
-    margin-top: 40rem;
+    margin-top: 10rem;
     height: 100vh;
   }
 
@@ -19,7 +19,7 @@
   }
 
   @include mq(900px) {
-    margin-top: 5rem;
+    margin-top: 20rem;
     height: 50vh;
     margin-bottom: 8rem;
   }

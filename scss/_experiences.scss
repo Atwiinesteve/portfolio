@@ -1,18 +1,17 @@
 #experiences--area {
-  height: 60vh;
-  margin: 20rem;
+  height: 40vh;
+  margin: 30rem 20rem;
 
   @include mq(300px) {
-    margin: 8rem 2rem;
+    margin: 8rem 0rem;
   }
 
   @include mq(700px) {
-    margin: 8rem 5rem;
+    margin: 8rem 0rem;
   }
 
   @include mq(1000px) {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-top: 15rem;
   }
 
   .experiences--header {
@@ -29,17 +28,18 @@
 
   .experiences--banner {
     width: 100%;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url("https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRldmVsb3BlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-    background-size: contain;
-    background-position: center center;
-    background-attachment: fixed;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 9fr));
+    place-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1517503733723-8ea1cf616798?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGRldmVsb3BlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    object-fit: contain;
+    background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: none;
-    margin: 0;
+    margin: 0!important;
 
     @include mq(300px) {
       flex-direction: column;
@@ -49,36 +49,33 @@
       flex-direction: row;
     }
 
-    .technology--images {
-      flex: 50%;
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 1rem;
+    img {
+      width: 100px;
+      height: 100px;
 
-      img {
-        width: 120px;
-        height: 120px;
+      @include mq(300px) {
+        width: 60px;
+        height: 60px;
+      }
 
-        @include mq(300px) {
-          width: 70px;
-          height: 70px;
-        }
+      @include mq(500px) {
+        width: 80px;
+        height: 80px;
+      }
 
-        @include mq(600px) {
-          width: 100px;
-          height: 100px;
-        }
+      @include mq(600px) {
+        width: 100px;
+        height: 100px;
+      }
 
-        @include mq(900px) {
-          width: 101px;
-          height: 101px;
-        }
+      @include mq(900px) {
+        width: 101px;
+        height: 101px;
+      }
 
-        @include mq(1000px) {
-          width: 153px;
-          height: 153px;
-        }
-
+      @include mq(1000px) {
+        width: 130px;
+        height: 130px;
       }
 
     }
