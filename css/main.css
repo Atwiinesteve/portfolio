@@ -1363,23 +1363,22 @@ section#resume--area p.coming--soon {
 }
 
 #experiences--area {
-  height: 60vh;
-  margin: 20rem;
+  height: 40vh;
+  margin: 30rem 20rem;
 }
 @media screen and (min-width: 300px) {
   #experiences--area {
-    margin: 8rem 2rem;
+    margin: 8rem 0rem;
   }
 }
 @media screen and (min-width: 700px) {
   #experiences--area {
-    margin: 8rem 5rem;
+    margin: 8rem 0rem;
   }
 }
 @media screen and (min-width: 1000px) {
   #experiences--area {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-top: 15rem;
   }
 }
 #experiences--area .experiences--header {
@@ -1395,17 +1394,19 @@ section#resume--area p.coming--soon {
 }
 #experiences--area .experiences--banner {
   width: 100%;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-image: url("https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRldmVsb3BlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-  background-size: contain;
-  background-position: center center;
-  background-attachment: fixed;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 9fr));
+  place-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1517503733723-8ea1cf616798?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGRldmVsb3BlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: none;
-  margin: 0;
+  margin: 0 !important;
 }
 @media screen and (min-width: 300px) {
   #experiences--area .experiences--banner {
@@ -1417,38 +1418,38 @@ section#resume--area p.coming--soon {
     flex-direction: row;
   }
 }
-#experiences--area .experiences--banner .technology--images {
-  flex: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 1rem;
-}
-#experiences--area .experiences--banner .technology--images img {
-  width: 120px;
-  height: 120px;
+#experiences--area .experiences--banner img {
+  width: 100px;
+  height: 100px;
 }
 @media screen and (min-width: 300px) {
-  #experiences--area .experiences--banner .technology--images img {
-    width: 70px;
-    height: 70px;
+  #experiences--area .experiences--banner img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 500px) {
+  #experiences--area .experiences--banner img {
+    width: 80px;
+    height: 80px;
   }
 }
 @media screen and (min-width: 600px) {
-  #experiences--area .experiences--banner .technology--images img {
+  #experiences--area .experiences--banner img {
     width: 100px;
     height: 100px;
   }
 }
 @media screen and (min-width: 900px) {
-  #experiences--area .experiences--banner .technology--images img {
+  #experiences--area .experiences--banner img {
     width: 101px;
     height: 101px;
   }
 }
 @media screen and (min-width: 1000px) {
-  #experiences--area .experiences--banner .technology--images img {
-    width: 153px;
-    height: 153px;
+  #experiences--area .experiences--banner img {
+    width: 130px;
+    height: 130px;
   }
 }
 
@@ -1462,7 +1463,7 @@ section#resume--area p.coming--soon {
 }
 @media screen and (min-width: 300px) {
   #contacts--area {
-    margin-top: 40rem;
+    margin-top: 10rem;
     height: 100vh;
   }
 }
@@ -1474,7 +1475,7 @@ section#resume--area p.coming--soon {
 }
 @media screen and (min-width: 900px) {
   #contacts--area {
-    margin-top: 5rem;
+    margin-top: 20rem;
     height: 50vh;
     margin-bottom: 8rem;
   }
