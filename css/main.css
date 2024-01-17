@@ -30,6 +30,7 @@ html {
   position: relative;
   overflow-x: hidden;
   background-color: rgb(240, 240, 240);
+  scroll-behavior: smooth;
 }
 
 .margin__top {
@@ -224,8 +225,7 @@ header#header .logo--area .logo--darker .box {
   margin-right: 0.5rem;
 }
 header#header .logo--area .logo--darker .box .fa-square {
-  -webkit-animation: twinkle 0.5s alternate infinite;
-          animation: twinkle 0.5s alternate infinite;
+  animation: twinkle 0.5s alternate infinite;
 }
 header#header .logo--area .logo--lighter {
   margin-left: 0.5rem;
@@ -248,24 +248,6 @@ header#header nav .nav--list .nav--items .nav--item a {
 }
 header#header nav .nav--list .nav--items .nav--item a:hover {
   cursor: pointer;
-}
-
-@-webkit-keyframes twinkle {
-  0% {
-    color: red;
-  }
-  20% {
-    color: rgb(0, 102, 255);
-  }
-  40% {
-    color: rgb(234, 0, 255);
-  }
-  60% {
-    color: rgb(238, 255, 0);
-  }
-  80% {
-    color: rgb(0, 255, 21);
-  }
 }
 
 @keyframes twinkle {
@@ -800,8 +782,6 @@ header#header nav .nav--list .nav--items .nav--item a:hover {
           clip-path: none;
 }
 
-@-webkit-keyframes rotateOriginal {}
-
 @keyframes rotateOriginal {}
 section#resume--area {
   width: 100vw;
@@ -815,26 +795,26 @@ section#resume--area p.coming--soon {
   font-size: 3rem;
 }
 
-#projects--area {
+.projects--area {
   margin-top: 6rem;
   padding: 0 3rem;
 }
-#projects--area .projects--header {
+.projects--area .projects--header {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--header {
+  .projects--area .projects--header {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 400px) {
-  #projects--area .projects--header {
+  .projects--area .projects--header {
     font-size: 1.2rem;
   }
 }
-#projects--area .projects--container {
+.projects--area .projects--container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -842,20 +822,20 @@ section#resume--area p.coming--soon {
   flex-direction: column;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container {
+  .projects--area .projects--container {
     padding: 1rem 3rem;
   }
 }
-#projects--area .projects--container .project--1,
-#projects--area .projects--container .project--2,
-#projects--area .projects--container .project--3,
-#projects--area .projects--container .project--4,
-#projects--area .projects--container .project--5,
-#projects--area .projects--container .project--6,
-#projects--area .projects--container .project--7,
-#projects--area .projects--container .project--8,
-#projects--area .projects--container .project--9,
-#projects--area .projects--container .project--10 {
+.projects--area .projects--container .project--1,
+.projects--area .projects--container .project--2,
+.projects--area .projects--container .project--3,
+.projects--area .projects--container .project--4,
+.projects--area .projects--container .project--5,
+.projects--area .projects--container .project--6,
+.projects--area .projects--container .project--7,
+.projects--area .projects--container .project--8,
+.projects--area .projects--container .project--9,
+.projects--area .projects--container .project--10 {
   width: 100%;
   align-self: center;
   align-content: center;
@@ -863,32 +843,32 @@ section#resume--area p.coming--soon {
   align-items: center;
   justify-content: center;
 }
-#projects--area .projects--container .project--1 .project--image img,
-#projects--area .projects--container .project--2 .project--image img,
-#projects--area .projects--container .project--3 .project--image img,
-#projects--area .projects--container .project--4 .project--image img,
-#projects--area .projects--container .project--5 .project--image img,
-#projects--area .projects--container .project--6 .project--image img,
-#projects--area .projects--container .project--7 .project--image img,
-#projects--area .projects--container .project--8 .project--image img,
-#projects--area .projects--container .project--9 .project--image img,
-#projects--area .projects--container .project--10 .project--image img {
+.projects--area .projects--container .project--1 .project--image img,
+.projects--area .projects--container .project--2 .project--image img,
+.projects--area .projects--container .project--3 .project--image img,
+.projects--area .projects--container .project--4 .project--image img,
+.projects--area .projects--container .project--5 .project--image img,
+.projects--area .projects--container .project--6 .project--image img,
+.projects--area .projects--container .project--7 .project--image img,
+.projects--area .projects--container .project--8 .project--image img,
+.projects--area .projects--container .project--9 .project--image img,
+.projects--area .projects--container .project--10 .project--image img {
   width: 450px;
   height: 270px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--1 .project--image img,
-#projects--area .projects--container .project--2 .project--image img,
-#projects--area .projects--container .project--3 .project--image img,
-#projects--area .projects--container .project--4 .project--image img,
-#projects--area .projects--container .project--5 .project--image img,
-#projects--area .projects--container .project--6 .project--image img,
-#projects--area .projects--container .project--7 .project--image img,
-#projects--area .projects--container .project--8 .project--image img,
-#projects--area .projects--container .project--9 .project--image img,
-#projects--area .projects--container .project--10 .project--image img {
+  .projects--area .projects--container .project--1 .project--image img,
+  .projects--area .projects--container .project--2 .project--image img,
+  .projects--area .projects--container .project--3 .project--image img,
+  .projects--area .projects--container .project--4 .project--image img,
+  .projects--area .projects--container .project--5 .project--image img,
+  .projects--area .projects--container .project--6 .project--image img,
+  .projects--area .projects--container .project--7 .project--image img,
+  .projects--area .projects--container .project--8 .project--image img,
+  .projects--area .projects--container .project--9 .project--image img,
+  .projects--area .projects--container .project--10 .project--image img {
     -o-object-fit: contain;
        object-fit: contain;
     width: 340px;
@@ -896,16 +876,16 @@ section#resume--area p.coming--soon {
   }
 }
 @media screen and (min-width: 400px) {
-  #projects--area .projects--container .project--1 .project--image img,
-#projects--area .projects--container .project--2 .project--image img,
-#projects--area .projects--container .project--3 .project--image img,
-#projects--area .projects--container .project--4 .project--image img,
-#projects--area .projects--container .project--5 .project--image img,
-#projects--area .projects--container .project--6 .project--image img,
-#projects--area .projects--container .project--7 .project--image img,
-#projects--area .projects--container .project--8 .project--image img,
-#projects--area .projects--container .project--9 .project--image img,
-#projects--area .projects--container .project--10 .project--image img {
+  .projects--area .projects--container .project--1 .project--image img,
+  .projects--area .projects--container .project--2 .project--image img,
+  .projects--area .projects--container .project--3 .project--image img,
+  .projects--area .projects--container .project--4 .project--image img,
+  .projects--area .projects--container .project--5 .project--image img,
+  .projects--area .projects--container .project--6 .project--image img,
+  .projects--area .projects--container .project--7 .project--image img,
+  .projects--area .projects--container .project--8 .project--image img,
+  .projects--area .projects--container .project--9 .project--image img,
+  .projects--area .projects--container .project--10 .project--image img {
     -o-object-fit: contain;
        object-fit: contain;
     width: 400px;
@@ -913,181 +893,181 @@ section#resume--area p.coming--soon {
   }
 }
 @media screen and (min-width: 700px) {
-  #projects--area .projects--container .project--1 .project--image img,
-#projects--area .projects--container .project--2 .project--image img,
-#projects--area .projects--container .project--3 .project--image img,
-#projects--area .projects--container .project--4 .project--image img,
-#projects--area .projects--container .project--5 .project--image img,
-#projects--area .projects--container .project--6 .project--image img,
-#projects--area .projects--container .project--7 .project--image img,
-#projects--area .projects--container .project--8 .project--image img,
-#projects--area .projects--container .project--9 .project--image img,
-#projects--area .projects--container .project--10 .project--image img {
+  .projects--area .projects--container .project--1 .project--image img,
+  .projects--area .projects--container .project--2 .project--image img,
+  .projects--area .projects--container .project--3 .project--image img,
+  .projects--area .projects--container .project--4 .project--image img,
+  .projects--area .projects--container .project--5 .project--image img,
+  .projects--area .projects--container .project--6 .project--image img,
+  .projects--area .projects--container .project--7 .project--image img,
+  .projects--area .projects--container .project--8 .project--image img,
+  .projects--area .projects--container .project--9 .project--image img,
+  .projects--area .projects--container .project--10 .project--image img {
     width: 500px;
     height: 400px;
     -o-object-fit: contain;
        object-fit: contain;
   }
 }
-#projects--area .projects--container .project--1 .project--description,
-#projects--area .projects--container .project--2 .project--description,
-#projects--area .projects--container .project--3 .project--description,
-#projects--area .projects--container .project--4 .project--description,
-#projects--area .projects--container .project--5 .project--description,
-#projects--area .projects--container .project--6 .project--description,
-#projects--area .projects--container .project--7 .project--description,
-#projects--area .projects--container .project--8 .project--description,
-#projects--area .projects--container .project--9 .project--description,
-#projects--area .projects--container .project--10 .project--description {
+.projects--area .projects--container .project--1 .project--description,
+.projects--area .projects--container .project--2 .project--description,
+.projects--area .projects--container .project--3 .project--description,
+.projects--area .projects--container .project--4 .project--description,
+.projects--area .projects--container .project--5 .project--description,
+.projects--area .projects--container .project--6 .project--description,
+.projects--area .projects--container .project--7 .project--description,
+.projects--area .projects--container .project--8 .project--description,
+.projects--area .projects--container .project--9 .project--description,
+.projects--area .projects--container .project--10 .project--description {
   width: 500px;
   margin-left: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--1 .project--description,
-#projects--area .projects--container .project--2 .project--description,
-#projects--area .projects--container .project--3 .project--description,
-#projects--area .projects--container .project--4 .project--description,
-#projects--area .projects--container .project--5 .project--description,
-#projects--area .projects--container .project--6 .project--description,
-#projects--area .projects--container .project--7 .project--description,
-#projects--area .projects--container .project--8 .project--description,
-#projects--area .projects--container .project--9 .project--description,
-#projects--area .projects--container .project--10 .project--description {
+  .projects--area .projects--container .project--1 .project--description,
+  .projects--area .projects--container .project--2 .project--description,
+  .projects--area .projects--container .project--3 .project--description,
+  .projects--area .projects--container .project--4 .project--description,
+  .projects--area .projects--container .project--5 .project--description,
+  .projects--area .projects--container .project--6 .project--description,
+  .projects--area .projects--container .project--7 .project--description,
+  .projects--area .projects--container .project--8 .project--description,
+  .projects--area .projects--container .project--9 .project--description,
+  .projects--area .projects--container .project--10 .project--description {
     width: 390px;
   }
 }
 @media screen and (min-width: 400px) {
-  #projects--area .projects--container .project--1 .project--description,
-#projects--area .projects--container .project--2 .project--description,
-#projects--area .projects--container .project--3 .project--description,
-#projects--area .projects--container .project--4 .project--description,
-#projects--area .projects--container .project--5 .project--description,
-#projects--area .projects--container .project--6 .project--description,
-#projects--area .projects--container .project--7 .project--description,
-#projects--area .projects--container .project--8 .project--description,
-#projects--area .projects--container .project--9 .project--description,
-#projects--area .projects--container .project--10 .project--description {
+  .projects--area .projects--container .project--1 .project--description,
+  .projects--area .projects--container .project--2 .project--description,
+  .projects--area .projects--container .project--3 .project--description,
+  .projects--area .projects--container .project--4 .project--description,
+  .projects--area .projects--container .project--5 .project--description,
+  .projects--area .projects--container .project--6 .project--description,
+  .projects--area .projects--container .project--7 .project--description,
+  .projects--area .projects--container .project--8 .project--description,
+  .projects--area .projects--container .project--9 .project--description,
+  .projects--area .projects--container .project--10 .project--description {
     width: 460px;
   }
 }
-#projects--area .projects--container .project--1 .project--description h3.project--name,
-#projects--area .projects--container .project--2 .project--description h3.project--name,
-#projects--area .projects--container .project--3 .project--description h3.project--name,
-#projects--area .projects--container .project--4 .project--description h3.project--name,
-#projects--area .projects--container .project--5 .project--description h3.project--name,
-#projects--area .projects--container .project--6 .project--description h3.project--name,
-#projects--area .projects--container .project--7 .project--description h3.project--name,
-#projects--area .projects--container .project--8 .project--description h3.project--name,
-#projects--area .projects--container .project--9 .project--description h3.project--name,
-#projects--area .projects--container .project--10 .project--description h3.project--name {
+.projects--area .projects--container .project--1 .project--description h3.project--name,
+.projects--area .projects--container .project--2 .project--description h3.project--name,
+.projects--area .projects--container .project--3 .project--description h3.project--name,
+.projects--area .projects--container .project--4 .project--description h3.project--name,
+.projects--area .projects--container .project--5 .project--description h3.project--name,
+.projects--area .projects--container .project--6 .project--description h3.project--name,
+.projects--area .projects--container .project--7 .project--description h3.project--name,
+.projects--area .projects--container .project--8 .project--description h3.project--name,
+.projects--area .projects--container .project--9 .project--description h3.project--name,
+.projects--area .projects--container .project--10 .project--description h3.project--name {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--1 .project--description h3.project--name,
-#projects--area .projects--container .project--2 .project--description h3.project--name,
-#projects--area .projects--container .project--3 .project--description h3.project--name,
-#projects--area .projects--container .project--4 .project--description h3.project--name,
-#projects--area .projects--container .project--5 .project--description h3.project--name,
-#projects--area .projects--container .project--6 .project--description h3.project--name,
-#projects--area .projects--container .project--7 .project--description h3.project--name,
-#projects--area .projects--container .project--8 .project--description h3.project--name,
-#projects--area .projects--container .project--9 .project--description h3.project--name,
-#projects--area .projects--container .project--10 .project--description h3.project--name {
+  .projects--area .projects--container .project--1 .project--description h3.project--name,
+  .projects--area .projects--container .project--2 .project--description h3.project--name,
+  .projects--area .projects--container .project--3 .project--description h3.project--name,
+  .projects--area .projects--container .project--4 .project--description h3.project--name,
+  .projects--area .projects--container .project--5 .project--description h3.project--name,
+  .projects--area .projects--container .project--6 .project--description h3.project--name,
+  .projects--area .projects--container .project--7 .project--description h3.project--name,
+  .projects--area .projects--container .project--8 .project--description h3.project--name,
+  .projects--area .projects--container .project--9 .project--description h3.project--name,
+  .projects--area .projects--container .project--10 .project--description h3.project--name {
     font-size: 1.3rem;
   }
 }
-#projects--area .projects--container .project--1 .project--description p.description,
-#projects--area .projects--container .project--2 .project--description p.description,
-#projects--area .projects--container .project--3 .project--description p.description,
-#projects--area .projects--container .project--4 .project--description p.description,
-#projects--area .projects--container .project--5 .project--description p.description,
-#projects--area .projects--container .project--6 .project--description p.description,
-#projects--area .projects--container .project--7 .project--description p.description,
-#projects--area .projects--container .project--8 .project--description p.description,
-#projects--area .projects--container .project--9 .project--description p.description,
-#projects--area .projects--container .project--10 .project--description p.description {
+.projects--area .projects--container .project--1 .project--description p.description,
+.projects--area .projects--container .project--2 .project--description p.description,
+.projects--area .projects--container .project--3 .project--description p.description,
+.projects--area .projects--container .project--4 .project--description p.description,
+.projects--area .projects--container .project--5 .project--description p.description,
+.projects--area .projects--container .project--6 .project--description p.description,
+.projects--area .projects--container .project--7 .project--description p.description,
+.projects--area .projects--container .project--8 .project--description p.description,
+.projects--area .projects--container .project--9 .project--description p.description,
+.projects--area .projects--container .project--10 .project--description p.description {
   font-size: 1.3rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--1 .project--description p.description,
-#projects--area .projects--container .project--2 .project--description p.description,
-#projects--area .projects--container .project--3 .project--description p.description,
-#projects--area .projects--container .project--4 .project--description p.description,
-#projects--area .projects--container .project--5 .project--description p.description,
-#projects--area .projects--container .project--6 .project--description p.description,
-#projects--area .projects--container .project--7 .project--description p.description,
-#projects--area .projects--container .project--8 .project--description p.description,
-#projects--area .projects--container .project--9 .project--description p.description,
-#projects--area .projects--container .project--10 .project--description p.description {
+  .projects--area .projects--container .project--1 .project--description p.description,
+  .projects--area .projects--container .project--2 .project--description p.description,
+  .projects--area .projects--container .project--3 .project--description p.description,
+  .projects--area .projects--container .project--4 .project--description p.description,
+  .projects--area .projects--container .project--5 .project--description p.description,
+  .projects--area .projects--container .project--6 .project--description p.description,
+  .projects--area .projects--container .project--7 .project--description p.description,
+  .projects--area .projects--container .project--8 .project--description p.description,
+  .projects--area .projects--container .project--9 .project--description p.description,
+  .projects--area .projects--container .project--10 .project--description p.description {
     font-size: 0.95rem;
   }
 }
 @media screen and (min-width: 500px) {
-  #projects--area .projects--container .project--1 .project--description p.description,
-#projects--area .projects--container .project--2 .project--description p.description,
-#projects--area .projects--container .project--3 .project--description p.description,
-#projects--area .projects--container .project--4 .project--description p.description,
-#projects--area .projects--container .project--5 .project--description p.description,
-#projects--area .projects--container .project--6 .project--description p.description,
-#projects--area .projects--container .project--7 .project--description p.description,
-#projects--area .projects--container .project--8 .project--description p.description,
-#projects--area .projects--container .project--9 .project--description p.description,
-#projects--area .projects--container .project--10 .project--description p.description {
+  .projects--area .projects--container .project--1 .project--description p.description,
+  .projects--area .projects--container .project--2 .project--description p.description,
+  .projects--area .projects--container .project--3 .project--description p.description,
+  .projects--area .projects--container .project--4 .project--description p.description,
+  .projects--area .projects--container .project--5 .project--description p.description,
+  .projects--area .projects--container .project--6 .project--description p.description,
+  .projects--area .projects--container .project--7 .project--description p.description,
+  .projects--area .projects--container .project--8 .project--description p.description,
+  .projects--area .projects--container .project--9 .project--description p.description,
+  .projects--area .projects--container .project--10 .project--description p.description {
     font-size: 1.1rem;
     width: 430px;
   }
 }
-#projects--area .projects--container .project--1 .project--description .tech--used h4,
-#projects--area .projects--container .project--2 .project--description .tech--used h4,
-#projects--area .projects--container .project--3 .project--description .tech--used h4,
-#projects--area .projects--container .project--4 .project--description .tech--used h4,
-#projects--area .projects--container .project--5 .project--description .tech--used h4,
-#projects--area .projects--container .project--6 .project--description .tech--used h4,
-#projects--area .projects--container .project--7 .project--description .tech--used h4,
-#projects--area .projects--container .project--8 .project--description .tech--used h4,
-#projects--area .projects--container .project--9 .project--description .tech--used h4,
-#projects--area .projects--container .project--10 .project--description .tech--used h4 {
+.projects--area .projects--container .project--1 .project--description .tech--used h4,
+.projects--area .projects--container .project--2 .project--description .tech--used h4,
+.projects--area .projects--container .project--3 .project--description .tech--used h4,
+.projects--area .projects--container .project--4 .project--description .tech--used h4,
+.projects--area .projects--container .project--5 .project--description .tech--used h4,
+.projects--area .projects--container .project--6 .project--description .tech--used h4,
+.projects--area .projects--container .project--7 .project--description .tech--used h4,
+.projects--area .projects--container .project--8 .project--description .tech--used h4,
+.projects--area .projects--container .project--9 .project--description .tech--used h4,
+.projects--area .projects--container .project--10 .project--description .tech--used h4 {
   text-transform: capitalize;
   margin: 0.8rem 0 0 0;
   font-size: 1.3rem;
 }
-#projects--area .projects--container .project--1 .project--description .tech--used p,
-#projects--area .projects--container .project--2 .project--description .tech--used p,
-#projects--area .projects--container .project--3 .project--description .tech--used p,
-#projects--area .projects--container .project--4 .project--description .tech--used p,
-#projects--area .projects--container .project--5 .project--description .tech--used p,
-#projects--area .projects--container .project--6 .project--description .tech--used p,
-#projects--area .projects--container .project--7 .project--description .tech--used p,
-#projects--area .projects--container .project--8 .project--description .tech--used p,
-#projects--area .projects--container .project--9 .project--description .tech--used p,
-#projects--area .projects--container .project--10 .project--description .tech--used p {
+.projects--area .projects--container .project--1 .project--description .tech--used p,
+.projects--area .projects--container .project--2 .project--description .tech--used p,
+.projects--area .projects--container .project--3 .project--description .tech--used p,
+.projects--area .projects--container .project--4 .project--description .tech--used p,
+.projects--area .projects--container .project--5 .project--description .tech--used p,
+.projects--area .projects--container .project--6 .project--description .tech--used p,
+.projects--area .projects--container .project--7 .project--description .tech--used p,
+.projects--area .projects--container .project--8 .project--description .tech--used p,
+.projects--area .projects--container .project--9 .project--description .tech--used p,
+.projects--area .projects--container .project--10 .project--description .tech--used p {
   margin-top: 0.5rem;
   font-size: 1.1rem;
 }
-#projects--area .projects--container .project--1 .project--description .project--btns,
-#projects--area .projects--container .project--2 .project--description .project--btns,
-#projects--area .projects--container .project--3 .project--description .project--btns,
-#projects--area .projects--container .project--4 .project--description .project--btns,
-#projects--area .projects--container .project--5 .project--description .project--btns,
-#projects--area .projects--container .project--6 .project--description .project--btns,
-#projects--area .projects--container .project--7 .project--description .project--btns,
-#projects--area .projects--container .project--8 .project--description .project--btns,
-#projects--area .projects--container .project--9 .project--description .project--btns,
-#projects--area .projects--container .project--10 .project--description .project--btns {
+.projects--area .projects--container .project--1 .project--description .project--btns,
+.projects--area .projects--container .project--2 .project--description .project--btns,
+.projects--area .projects--container .project--3 .project--description .project--btns,
+.projects--area .projects--container .project--4 .project--description .project--btns,
+.projects--area .projects--container .project--5 .project--description .project--btns,
+.projects--area .projects--container .project--6 .project--description .project--btns,
+.projects--area .projects--container .project--7 .project--description .project--btns,
+.projects--area .projects--container .project--8 .project--description .project--btns,
+.projects--area .projects--container .project--9 .project--description .project--btns,
+.projects--area .projects--container .project--10 .project--description .project--btns {
   margin-top: 0.9rem;
 }
-#projects--area .projects--container .project--1 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--2 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--3 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--4 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--5 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--6 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--7 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--8 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--9 .project--description .project--btns a.view--project,
-#projects--area .projects--container .project--10 .project--description .project--btns a.view--project {
+.projects--area .projects--container .project--1 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--2 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--3 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--4 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--5 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--6 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--7 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--8 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--9 .project--description .project--btns a.view--project,
+.projects--area .projects--container .project--10 .project--description .project--btns a.view--project {
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-family: "Quicksand", sans-serif;
@@ -1099,264 +1079,264 @@ section#resume--area p.coming--soon {
   background-color: blue;
   cursor: pointer;
 }
-#projects--area .projects--container .project--1 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--2 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--3 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--4 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--5 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--6 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--7 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--8 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--9 .project--description .project--btns a.view--project:hover,
-#projects--area .projects--container .project--10 .project--description .project--btns a.view--project:hover {
+.projects--area .projects--container .project--1 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--2 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--3 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--4 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--5 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--6 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--7 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--8 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--9 .project--description .project--btns a.view--project:hover,
+.projects--area .projects--container .project--10 .project--description .project--btns a.view--project:hover {
   background-color: rgb(59, 59, 252);
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--1 .project--description {
+  .projects--area .projects--container .project--1 .project--description {
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--1 {
+  .projects--area .projects--container .project--1 {
     padding: 1rem 2rem;
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--1 {
+  .projects--area .projects--container .project--1 {
     padding: 1rem 2rem;
     flex-direction: row;
   }
 }
-#projects--area .projects--container .project--2 {
+.projects--area .projects--container .project--2 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row-reverse;
 }
-#projects--area .projects--container .project--2 .project--description {
+.projects--area .projects--container .project--2 .project--description {
   text-align: right;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--2 .project--description {
+  .projects--area .projects--container .project--2 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--2 {
+  .projects--area .projects--container .project--2 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--2 {
+  .projects--area .projects--container .project--2 {
     padding: 1rem 2rem;
     flex-direction: row-reverse;
   }
 }
-#projects--area .projects--container .project--3 {
+.projects--area .projects--container .project--3 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
 }
-#projects--area .projects--container .project--3 .project--description {
+.projects--area .projects--container .project--3 .project--description {
   text-align: left;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--3 .project--description {
+  .projects--area .projects--container .project--3 .project--description {
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--3 {
+  .projects--area .projects--container .project--3 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--3 {
+  .projects--area .projects--container .project--3 {
     padding: 1rem 2rem;
     flex-direction: row;
   }
 }
-#projects--area .projects--container .project--4 {
+.projects--area .projects--container .project--4 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row-reverse;
 }
-#projects--area .projects--container .project--4 .project--description {
+.projects--area .projects--container .project--4 .project--description {
   text-align: right;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--4 .project--description {
+  .projects--area .projects--container .project--4 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--4 {
+  .projects--area .projects--container .project--4 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--4 {
+  .projects--area .projects--container .project--4 {
     padding: 1rem 2rem;
     flex-direction: row-reverse;
   }
 }
-#projects--area .projects--container .project--5 {
+.projects--area .projects--container .project--5 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
 }
-#projects--area .projects--container .project--5 .project--description {
+.projects--area .projects--container .project--5 .project--description {
   text-align: left;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--5 .project--description {
+  .projects--area .projects--container .project--5 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--5 {
+  .projects--area .projects--container .project--5 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--5 {
+  .projects--area .projects--container .project--5 {
     padding: 1rem 2rem;
     flex-direction: row;
   }
 }
-#projects--area .projects--container .project--6 {
+.projects--area .projects--container .project--6 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row-reverse;
 }
-#projects--area .projects--container .project--6 .project--description {
+.projects--area .projects--container .project--6 .project--description {
   text-align: left;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--6 .project--description {
+  .projects--area .projects--container .project--6 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--6 {
+  .projects--area .projects--container .project--6 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--6 {
+  .projects--area .projects--container .project--6 {
     padding: 1rem 2rem;
     flex-direction: row-reverse;
   }
 }
-#projects--area .projects--container .project--7 {
+.projects--area .projects--container .project--7 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
 }
-#projects--area .projects--container .project--7 .project--description {
+.projects--area .projects--container .project--7 .project--description {
   text-align: left;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--7 .project--description {
+  .projects--area .projects--container .project--7 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--7 {
+  .projects--area .projects--container .project--7 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--7 {
+  .projects--area .projects--container .project--7 {
     padding: 1rem 2rem;
     flex-direction: row;
   }
 }
-#projects--area .projects--container .project--8 {
+.projects--area .projects--container .project--8 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row-reverse;
 }
-#projects--area .projects--container .project--8 .project--description {
+.projects--area .projects--container .project--8 .project--description {
   text-align: left;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--8 .project--description {
+  .projects--area .projects--container .project--8 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--8 {
+  .projects--area .projects--container .project--8 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--8 {
+  .projects--area .projects--container .project--8 {
     padding: 1rem 2rem;
     flex-direction: row-reverse;
   }
 }
-#projects--area .projects--container .project--9 {
+.projects--area .projects--container .project--9 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
 }
-#projects--area .projects--container .project--9 .project--description {
+.projects--area .projects--container .project--9 .project--description {
   text-align: left;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--9 .project--description {
+  .projects--area .projects--container .project--9 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--9 {
+  .projects--area .projects--container .project--9 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--9 {
+  .projects--area .projects--container .project--9 {
     padding: 1rem 2rem;
     flex-direction: row;
   }
 }
-#projects--area .projects--container .project--10 {
+.projects--area .projects--container .project--10 {
   margin-top: 1rem;
   display: flex;
   flex-direction: row-reverse;
 }
-#projects--area .projects--container .project--10 .project--description {
+.projects--area .projects--container .project--10 .project--description {
   text-align: left;
   margin-right: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--10 .project--description {
+  .projects--area .projects--container .project--10 .project--description {
     text-align: left;
     padding: 1rem 1.5rem;
   }
 }
 @media screen and (min-width: 300px) {
-  #projects--area .projects--container .project--10 {
+  .projects--area .projects--container .project--10 {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1020px) {
-  #projects--area .projects--container .project--10 {
+  .projects--area .projects--container .project--10 {
     padding: 1rem 2rem;
     flex-direction: row-reverse;
   }
@@ -1453,7 +1433,7 @@ section#resume--area p.coming--soon {
   }
 }
 
-#contacts--area {
+.contacts--area {
   width: 100%;
   height: 60vh;
   display: flex;
@@ -1462,25 +1442,25 @@ section#resume--area p.coming--soon {
   align-items: center;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area {
+  .contacts--area {
     margin-top: 10rem;
     height: 100vh;
   }
 }
 @media screen and (min-width: 500px) {
-  #contacts--area {
+  .contacts--area {
     margin-top: 10rem;
     height: 80vh;
   }
 }
 @media screen and (min-width: 900px) {
-  #contacts--area {
+  .contacts--area {
     margin-top: 20rem;
     height: 50vh;
     margin-bottom: 8rem;
   }
 }
-#contacts--area .contacts--header {
+.contacts--area .contacts--header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1489,54 +1469,54 @@ section#resume--area p.coming--soon {
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .contacts--header {
+  .contacts--area .contacts--header {
     font-size: 1.3rem;
   }
 }
-#contacts--area .contacts--header span {
+.contacts--area .contacts--header span {
   font-family: "Fasthand", cursive;
 }
-#contacts--area .contacts--header img {
+.contacts--area .contacts--header img {
   width: 60px;
   height: 60px;
   margin-left: 1rem;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .contacts--header img {
+  .contacts--area .contacts--header img {
     width: 50px;
     height: 50px;
   }
 }
-#contacts--area .form--area {
+.contacts--area .form--area {
   width: 500px;
   height: 800px;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area {
+  .contacts--area .form--area {
     width: 300px;
     height: 500px;
   }
 }
 @media screen and (min-width: 600px) {
-  #contacts--area .form--area {
+  .contacts--area .form--area {
     width: 500px;
     height: 500px;
   }
 }
-#contacts--area .form--area form .name {
+.contacts--area .form--area form .name {
   margin-bottom: 1.2rem;
 }
-#contacts--area .form--area form .name label {
+.contacts--area .form--area form .name label {
   font-weight: bolder;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area form .name label {
+  .contacts--area .form--area form .name label {
     font-size: 1rem;
   }
 }
-#contacts--area .form--area form .name input {
+.contacts--area .form--area form .name input {
   margin-top: 1rem;
   width: 100%;
   padding: 0.7rem 1rem;
@@ -1544,30 +1524,30 @@ section#resume--area p.coming--soon {
   border: 1px solid gray;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area form .name input {
+  .contacts--area .form--area form .name input {
     padding: 0.5rem;
   }
 }
-#contacts--area .form--area form .name input[type=text],
-#contacts--area .form--area form .name input[type=text] {
+.contacts--area .form--area form .name input[type=text],
+.contacts--area .form--area form .name input[type=text] {
   font-family: "Quicksand", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
 }
-#contacts--area .form--area form .email {
+.contacts--area .form--area form .email {
   margin-bottom: 1.2rem;
 }
-#contacts--area .form--area form .email label {
+.contacts--area .form--area form .email label {
   font-weight: bolder;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area form .email label {
+  .contacts--area .form--area form .email label {
     font-size: 1.2rem;
   }
 }
-#contacts--area .form--area form .email input {
+.contacts--area .form--area form .email input {
   margin-top: 1rem;
   width: 100%;
   padding: 0.7rem 1rem;
@@ -1575,30 +1555,30 @@ section#resume--area p.coming--soon {
   border: 1px solid gray;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area form .email input {
+  .contacts--area .form--area form .email input {
     padding: 0.5rem;
   }
 }
-#contacts--area .form--area form .email input[type=email],
-#contacts--area .form--area form .email input[type=email] {
+.contacts--area .form--area form .email input[type=email],
+.contacts--area .form--area form .email input[type=email] {
   font-family: "Quicksand", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
 }
-#contacts--area .form--area form .message {
+.contacts--area .form--area form .message {
   margin-bottom: 1.2rem;
 }
-#contacts--area .form--area form .message label {
+.contacts--area .form--area form .message label {
   font-weight: bolder;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area form .message label {
+  .contacts--area .form--area form .message label {
     font-size: 1.2rem;
   }
 }
-#contacts--area .form--area form .message textarea {
+.contacts--area .form--area form .message textarea {
   margin-top: 1rem;
   width: 100%;
   height: 250px;
@@ -1609,11 +1589,11 @@ section#resume--area p.coming--soon {
   font-size: 1.3rem;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area form .message textarea {
+  .contacts--area .form--area form .message textarea {
     height: 200px;
   }
 }
-#contacts--area .form--area form .submit--btn button {
+.contacts--area .form--area form .submit--btn button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1628,16 +1608,56 @@ section#resume--area p.coming--soon {
   color: white;
 }
 @media screen and (min-width: 300px) {
-  #contacts--area .form--area form .submit--btn button {
+  .contacts--area .form--area form .submit--btn button {
     font-size: 1rem;
     padding: 0.5rem;
   }
 }
-#contacts--area .form--area form .submit--btn button .fa-telegram {
+.contacts--area .form--area form .submit--btn button .fa-telegram {
   width: 30px;
   height: 30px;
   margin-left: 1rem;
   color: white;
+}
+
+a.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #0f43ee;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  text-align: center;
+  line-height: 50px;
+  z-index: 1000;
+}
+a.back-to-top:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+a.back-to-top i {
+  vertical-align: middle;
+}
+
+a.back-to-top {
+  animation: bubble 1s infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 footer#footer--area {
