@@ -1,9 +1,9 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20) {
-    document.getElementById("header").style.top = "0";
-  } else {
-    document.getElementById("header").style.top = "-100px";
-  }
-}
+window.addEventListener("scroll", function () {
+	var backToTopButton = document.getElementById("back-to-top");
+	if (window.pageYOffset > 100) {
+		// Show backToTopButton after 100px of scrolling
+		backToTopButton.style.display = "block";
+	} else {
+		backToTopButton.style.display = "none";
+	}
+});

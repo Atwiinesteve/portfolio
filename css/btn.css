@@ -1,0 +1,20 @@
+button.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 1000;
+}
+button.back-to-top:hover {
+  background-color: #444;
+}
+button.back-to-top i {
+  vertical-align: middle;
+}/*# sourceMappingURL=btn.css.map */
